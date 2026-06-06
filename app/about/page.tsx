@@ -54,7 +54,7 @@ export default function AboutPage() {
                       </Badge>
                     </div>
                   </div>
-                  <div className="space-y-3 text-sm text-taupe-500 leading-relaxed">
+                  <div className="space-y-3 text-sm text-black-500 leading-relaxed">
                     <p>
                       LQS LLC was founded with a simple mission: provide Moore-area quilters with an 
                       affordable, reliable longarm quilting service they can truly trust. As a veteran, 
