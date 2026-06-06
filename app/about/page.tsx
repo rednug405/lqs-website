@@ -26,7 +26,7 @@ export default function AboutPage() {
               <span className="text-rose-400 font-medium text-sm">About & Contact</span>
             </div>
             <h1 className="text-4xl font-bold text-taupe-800 mb-3">About LQS LLC</h1>
-            <p className="text-taupe-500 max-w-2xl text-lg">
+            <p className="text-rose-500 max-w-2xl text-lg">
               A veteran-owned longarm quilting service in Moore, Oklahoma. Quality work, 
               honest pricing, and personal care — for every single quilt.
             </p>
