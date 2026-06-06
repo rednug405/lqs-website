@@ -9,304 +9,255 @@ type Category = "All" | "Floral & Botanical" | "Hearts" | "Swirls & Loops" | "Ge
 interface Pattern {
   name: string;
   category: Exclude<Category, "All">;
+  img: string;
+}
+
+function slug(name: string) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 
 const patterns: Pattern[] = [
   // Floral & Botanical
-  { name: "Apple Leaves", category: "Floral & Botanical" },
-  { name: "Audree", category: "Floral & Botanical" },
-  { name: "Blooms", category: "Floral & Botanical" },
-  { name: "Blossom Cluster E2E", category: "Floral & Botanical" },
-  { name: "Blossom E2E", category: "Floral & Botanical" },
-  { name: "Clover Edge to Edge", category: "Floral & Botanical" },
-  { name: "Cornflower", category: "Floral & Botanical" },
-  { name: "Cornflower 2", category: "Floral & Botanical" },
-  { name: "Cornflower 3", category: "Floral & Botanical" },
-  { name: "Daisy Border", category: "Floral & Botanical" },
-  { name: "Daisy Border Continuous", category: "Floral & Botanical" },
-  { name: "Daisy Marie", category: "Floral & Botanical" },
-  { name: "Daisy Square Continuous", category: "Floral & Botanical" },
-  { name: "Daisychain E2E", category: "Floral & Botanical" },
-  { name: "Feather Delight", category: "Floral & Botanical" },
-  { name: "Field of Flowers", category: "Floral & Botanical" },
-  { name: "Flipped on Feathers", category: "Floral & Botanical" },
-  { name: "Flower Leaf Border", category: "Floral & Botanical" },
-  { name: "Flowers on Parade", category: "Floral & Botanical" },
-  { name: "Fluffy Clouds", category: "Floral & Botanical" },
-  { name: "Flutterbys", category: "Floral & Botanical" },
-  { name: "Holly Berry", category: "Floral & Botanical" },
-  { name: "Leaf and Circles Triangle", category: "Floral & Botanical" },
-  { name: "Leaf Trail", category: "Floral & Botanical" },
-  { name: "Leaf Up", category: "Floral & Botanical" },
-  { name: "Leafy Vines", category: "Floral & Botanical" },
-  { name: "Leaves Alternating", category: "Floral & Botanical" },
-  { name: "Leaves Basic", category: "Floral & Botanical" },
-  { name: "Leaves with Spine", category: "Floral & Botanical" },
-  { name: "Oak Leaf", category: "Floral & Botanical" },
-  { name: "Orange Peels", category: "Floral & Botanical" },
-  { name: "Paisley Curl Border", category: "Floral & Botanical" },
-  { name: "Rose Garden", category: "Floral & Botanical" },
-  { name: "Single Leaf", category: "Floral & Botanical" },
-  { name: "Sunshine 1", category: "Floral & Botanical" },
-  { name: "Trailing Leaves", category: "Floral & Botanical" },
-  { name: "Tree 1", category: "Floral & Botanical" },
-  { name: "Tri-Leaf Continuous", category: "Floral & Botanical" },
-  { name: "Tulip Border", category: "Floral & Botanical" },
-  { name: "Tulips in a Row", category: "Floral & Botanical" },
-  { name: "Tulips Triangle", category: "Floral & Botanical" },
+  { name: "Apple Leaves", category: "Floral & Botanical", img: "/patterns/apple-leaves.png" },
+  { name: "Audree", category: "Floral & Botanical", img: "/patterns/audree.png" },
+  { name: "Blooms", category: "Floral & Botanical", img: "/patterns/blooms.png" },
+  { name: "Blossom Cluster E2E", category: "Floral & Botanical", img: "/patterns/blossom-cluster-e2e.png" },
+  { name: "Blossom E2E", category: "Floral & Botanical", img: "/patterns/blossom-e2e.png" },
+  { name: "Clover E2E", category: "Floral & Botanical", img: "/patterns/clover-e2e.png" },
+  { name: "Cornflower 1", category: "Floral & Botanical", img: "/patterns/cornflower-1.png" },
+  { name: "Cornflower 2", category: "Floral & Botanical", img: "/patterns/cornflower-2.png" },
+  { name: "Cornflower 3", category: "Floral & Botanical", img: "/patterns/cornflower-3.png" },
+  { name: "Daisy Border", category: "Floral & Botanical", img: "/patterns/daisy-border.png" },
+  { name: "Daisy Border Continuous", category: "Floral & Botanical", img: "/patterns/daisy-border-continuous.png" },
+  { name: "Daisy Marie", category: "Floral & Botanical", img: "/patterns/daisy-marie.png" },
+  { name: "Daisy Square Continuous", category: "Floral & Botanical", img: "/patterns/daisy-square-continuous.png" },
+  { name: "Daisychain E2E", category: "Floral & Botanical", img: "/patterns/daisychain-e2e.png" },
+  { name: "Feather Delight", category: "Floral & Botanical", img: "/patterns/feather-delight.png" },
+  { name: "Field of Flowers", category: "Floral & Botanical", img: "/patterns/field-of-flowers.png" },
+  { name: "Flipped on Feathers", category: "Floral & Botanical", img: "/patterns/flipped-on-feathers.png" },
+  { name: "Flower Leaf Border", category: "Floral & Botanical", img: "/patterns/flower-leaf-border.png" },
+  { name: "Flowers on Parade", category: "Floral & Botanical", img: "/patterns/flowers-on-parade.png" },
+  { name: "Fluffy Clouds", category: "Floral & Botanical", img: "/patterns/fluffy-clouds.png" },
+  { name: "Flutterbys", category: "Floral & Botanical", img: "/patterns/flutterbys.png" },
+  { name: "Holly Berry", category: "Floral & Botanical", img: "/patterns/holly-berry.png" },
+  { name: "Leaf and Circles Triangle", category: "Floral & Botanical", img: "/patterns/leaf-and-circles-triangle.png" },
+  { name: "Leaf Trail", category: "Floral & Botanical", img: "/patterns/leaf-trail.png" },
+  { name: "Leaf Up", category: "Floral & Botanical", img: "/patterns/leaf-up.png" },
+  { name: "Leafy Vines", category: "Floral & Botanical", img: "/patterns/leafy-vines.png" },
+  { name: "Leaves Alternating", category: "Floral & Botanical", img: "/patterns/leaves-alternating.png" },
+  { name: "Leaves Basic", category: "Floral & Botanical", img: "/patterns/leaves-basic.png" },
+  { name: "Leaves with Spine", category: "Floral & Botanical", img: "/patterns/leaves-with-spine.png" },
+  { name: "Oak Leaf", category: "Floral & Botanical", img: "/patterns/oak-leaf.png" },
+  { name: "Orange Peels", category: "Floral & Botanical", img: "/patterns/orange-peels.png" },
+  { name: "Paisley Curl Border", category: "Floral & Botanical", img: "/patterns/paisley-curl-border.png" },
+  { name: "Rose Garden", category: "Floral & Botanical", img: "/patterns/rose-garden.png" },
+  { name: "Single Leaf", category: "Floral & Botanical", img: "/patterns/single-leaf.png" },
+  { name: "Sunshine 1", category: "Floral & Botanical", img: "/patterns/sunshine-1.png" },
+  { name: "Trailing Leaves", category: "Floral & Botanical", img: "/patterns/trailing-leaves.png" },
+  { name: "Tree 1", category: "Floral & Botanical", img: "/patterns/tree-1.png" },
+  { name: "Tri-Leaf Continuous", category: "Floral & Botanical", img: "/patterns/tri-leaf-continuous.png" },
+  { name: "Tulip Border", category: "Floral & Botanical", img: "/patterns/tulip-border.png" },
+  { name: "Tulips in a Row", category: "Floral & Botanical", img: "/patterns/tulips-in-a-row.png" },
+  { name: "Tulips Triangle", category: "Floral & Botanical", img: "/patterns/tulips-triangle.png" },
   // Hearts
-  { name: "Heart Border 2", category: "Hearts" },
-  { name: "Heart Border 3", category: "Hearts" },
-  { name: "Heart in Heart Border", category: "Hearts" },
-  { name: "Heart Triangle", category: "Hearts" },
-  { name: "Heart Trio Triangle", category: "Hearts" },
-  { name: "Red Hot Hearts", category: "Hearts" },
+  { name: "Heart Border 2", category: "Hearts", img: "/patterns/heart-border-2.png" },
+  { name: "Heart Border 3", category: "Hearts", img: "/patterns/heart-border-3.png" },
+  { name: "Heart in Heart Border", category: "Hearts", img: "/patterns/heart-in-heart-border.png" },
+  { name: "Heart Triangle", category: "Hearts", img: "/patterns/heart-triangle.png" },
+  { name: "Heart Trio Triangle", category: "Hearts", img: "/patterns/heart-trio-triangle.png" },
+  { name: "Red Hot Hearts", category: "Hearts", img: "/patterns/red-hot-hearts.png" },
   // Swirls & Loops
-  { name: "Alternating Loops 1", category: "Swirls & Loops" },
-  { name: "Alternating Loops 2", category: "Swirls & Loops" },
-  { name: "Balloon Continuous Line", category: "Swirls & Loops" },
-  { name: "Blustery Breeze", category: "Swirls & Loops" },
-  { name: "Castle Scroll", category: "Swirls & Loops" },
-  { name: "Curls", category: "Swirls & Loops" },
-  { name: "Curls Too", category: "Swirls & Loops" },
-  { name: "Double Curls", category: "Swirls & Loops" },
-  { name: "Double Swirl 2", category: "Swirls & Loops" },
-  { name: "Lazy Curl Sash", category: "Swirls & Loops" },
-  { name: "Loop 2 in a Line", category: "Swirls & Loops" },
-  { name: "Loop in a Line", category: "Swirls & Loops" },
-  { name: "Loop in Loops", category: "Swirls & Loops" },
-  { name: "Loops by Three", category: "Swirls & Loops" },
-  { name: "Loops Up and Down", category: "Swirls & Loops" },
-  { name: "Music Meander", category: "Swirls & Loops" },
-  { name: "Ribbon Continuous", category: "Swirls & Loops" },
-  { name: "Rolling Along", category: "Swirls & Loops" },
-  { name: "Scroll Border", category: "Swirls & Loops" },
-  { name: "Spiral", category: "Swirls & Loops" },
-  { name: "Squiggle", category: "Swirls & Loops" },
-  { name: "Stipple", category: "Swirls & Loops" },
-  { name: "Stipple 2", category: "Swirls & Loops" },
-  { name: "Three Loop Border", category: "Swirls & Loops" },
-  { name: "Undulating Wave", category: "Swirls & Loops" },
-  { name: "Water Meander", category: "Swirls & Loops" },
-  { name: "Wind", category: "Swirls & Loops" },
+  { name: "Alternating Loops 1", category: "Swirls & Loops", img: "/patterns/alternating-loops-1.png" },
+  { name: "Alternating Loops 2", category: "Swirls & Loops", img: "/patterns/alternating-loops-2.png" },
+  { name: "Balloon Continuous Line", category: "Swirls & Loops", img: "/patterns/balloon-continuous-line.png" },
+  { name: "Blustery Breeze", category: "Swirls & Loops", img: "/patterns/blustery-breeze.png" },
+  { name: "Castle Scroll", category: "Swirls & Loops", img: "/patterns/castle-scroll.png" },
+  { name: "Curls", category: "Swirls & Loops", img: "/patterns/curls.png" },
+  { name: "Curls Too", category: "Swirls & Loops", img: "/patterns/curls-too.png" },
+  { name: "Double Curls", category: "Swirls & Loops", img: "/patterns/double-curls.png" },
+  { name: "Double Swirl 2", category: "Swirls & Loops", img: "/patterns/double-swirl-2.png" },
+  { name: "Lazy Curl Sash", category: "Swirls & Loops", img: "/patterns/lazy-curl-sash.png" },
+  { name: "Loop 2 in a Line", category: "Swirls & Loops", img: "/patterns/loop-2-in-a-line.png" },
+  { name: "Loop in a Line", category: "Swirls & Loops", img: "/patterns/loop-in-a-line.png" },
+  { name: "Loop in Loops", category: "Swirls & Loops", img: "/patterns/loop-in-loops.png" },
+  { name: "Loops by Three", category: "Swirls & Loops", img: "/patterns/loops-by-three.png" },
+  { name: "Loops Up and Down", category: "Swirls & Loops", img: "/patterns/loops-up-and-down.png" },
+  { name: "Music Meander", category: "Swirls & Loops", img: "/patterns/music-meander.png" },
+  { name: "Ribbon Continuous", category: "Swirls & Loops", img: "/patterns/ribbon-continuous.png" },
+  { name: "Rolling Along", category: "Swirls & Loops", img: "/patterns/rolling-along.png" },
+  { name: "Scroll Border", category: "Swirls & Loops", img: "/patterns/scroll-border.png" },
+  { name: "Spiral", category: "Swirls & Loops", img: "/patterns/spiral.png" },
+  { name: "Squiggle", category: "Swirls & Loops", img: "/patterns/squiggle.png" },
+  { name: "Stipple", category: "Swirls & Loops", img: "/patterns/stipple.png" },
+  { name: "Stipple 2", category: "Swirls & Loops", img: "/patterns/stipple-2.png" },
+  { name: "Three Loop Border", category: "Swirls & Loops", img: "/patterns/three-loop-border.png" },
+  { name: "Undulating Wave", category: "Swirls & Loops", img: "/patterns/undulating-wave.png" },
+  { name: "Water Meander", category: "Swirls & Loops", img: "/patterns/water-meander.png" },
+  { name: "Wind", category: "Swirls & Loops", img: "/patterns/wind.png" },
   // Geometric & Classic
-  { name: "Baptist Fan", category: "Geometric & Classic" },
-  { name: "Bubble Scale", category: "Geometric & Classic" },
-  { name: "Cat Eyes 2", category: "Geometric & Classic" },
-  { name: "Chess Set", category: "Geometric & Classic" },
-  { name: "Clamshell", category: "Geometric & Classic" },
-  { name: "Clamshell with Arc", category: "Geometric & Classic" },
-  { name: "Clamshell with Curl", category: "Geometric & Classic" },
-  { name: "Clamshell with Loop", category: "Geometric & Classic" },
-  { name: "Design 1 Border", category: "Geometric & Classic" },
-  { name: "Diamond Eyes", category: "Geometric & Classic" },
-  { name: "Double Circle Continuous", category: "Geometric & Classic" },
-  { name: "Four Line Gap Piano Key", category: "Geometric & Classic" },
-  { name: "Greek Squared", category: "Geometric & Classic" },
-  { name: "Line Illusion Border", category: "Geometric & Classic" },
-  { name: "Peppermint Candy", category: "Geometric & Classic" },
-  { name: "Piano Key Swag", category: "Geometric & Classic" },
-  { name: "Ribbon Candy", category: "Geometric & Classic" },
-  { name: "Ribbon Candy Diamond Small", category: "Geometric & Classic" },
-  { name: "Rope", category: "Geometric & Classic" },
-  { name: "Snail Square 1", category: "Geometric & Classic" },
-  { name: "Snail Square 2", category: "Geometric & Classic" },
-  { name: "Snail Square 3", category: "Geometric & Classic" },
-  { name: "Snail Square 4", category: "Geometric & Classic" },
-  { name: "Snail Square 5", category: "Geometric & Classic" },
-  { name: "Snail Square Angle", category: "Geometric & Classic" },
-  { name: "Spine 1", category: "Geometric & Classic" },
-  { name: "Spine 2", category: "Geometric & Classic" },
-  { name: "Square Spiral", category: "Geometric & Classic" },
-  { name: "Straight Line Stipple", category: "Geometric & Classic" },
-  { name: "Tiger Tooth", category: "Geometric & Classic" },
-  { name: "Triangle Lacing", category: "Geometric & Classic" },
-  { name: "Triangle Loops", category: "Geometric & Classic" },
-  { name: "Two Line Gap Piano Key", category: "Geometric & Classic" },
-  { name: "Wavy Cogs", category: "Geometric & Classic" },
-  { name: "Wrenchworks", category: "Geometric & Classic" },
-  { name: "Zig Zag", category: "Geometric & Classic" },
+  { name: "Baptist Fan", category: "Geometric & Classic", img: "/patterns/baptist-fan.png" },
+  { name: "Bubble Scale", category: "Geometric & Classic", img: "/patterns/bubble-scale.png" },
+  { name: "Cat Eyes 2", category: "Geometric & Classic", img: "/patterns/cat-eyes-2.png" },
+  { name: "Chess Set", category: "Geometric & Classic", img: "/patterns/chess-set.png" },
+  { name: "Clamshell", category: "Geometric & Classic", img: "/patterns/clamshell.png" },
+  { name: "Clamshell with Arc", category: "Geometric & Classic", img: "/patterns/clamshell-with-arc.png" },
+  { name: "Clamshell with Curl", category: "Geometric & Classic", img: "/patterns/clamshell-with-curl.png" },
+  { name: "Clamshell with Loop", category: "Geometric & Classic", img: "/patterns/clamshell-with-loop.png" },
+  { name: "Design 1 Border", category: "Geometric & Classic", img: "/patterns/design-1-border.png" },
+  { name: "Diamond Eyes", category: "Geometric & Classic", img: "/patterns/diamond-eyes.png" },
+  { name: "Double Circle Continuous", category: "Geometric & Classic", img: "/patterns/double-circle-continuous.png" },
+  { name: "Four Line Gap Piano Key", category: "Geometric & Classic", img: "/patterns/four-line-gap-piano-key.png" },
+  { name: "Greek Squared", category: "Geometric & Classic", img: "/patterns/greek-squared.png" },
+  { name: "Line Illusion Border", category: "Geometric & Classic", img: "/patterns/line-illusion-border.png" },
+  { name: "Peppermint Candy", category: "Geometric & Classic", img: "/patterns/peppermint-candy.png" },
+  { name: "Piano Key Swag", category: "Geometric & Classic", img: "/patterns/piano-key-swag.png" },
+  { name: "Ribbon Candy", category: "Geometric & Classic", img: "/patterns/ribbon-candy.png" },
+  { name: "Ribbon Candy Diamond Small", category: "Geometric & Classic", img: "/patterns/ribbon-candy-diamond-small.png" },
+  { name: "Rope", category: "Geometric & Classic", img: "/patterns/rope.png" },
+  { name: "Snail Square 1", category: "Geometric & Classic", img: "/patterns/snail-square-1.png" },
+  { name: "Snail Square 2", category: "Geometric & Classic", img: "/patterns/snail-square-2.png" },
+  { name: "Snail Square 3", category: "Geometric & Classic", img: "/patterns/snail-square-3.png" },
+  { name: "Snail Square 4", category: "Geometric & Classic", img: "/patterns/snail-square-4.png" },
+  { name: "Snail Square 5", category: "Geometric & Classic", img: "/patterns/snail-square-5.png" },
+  { name: "Snail Square Angle", category: "Geometric & Classic", img: "/patterns/snail-square-angle.png" },
+  { name: "Spine 1", category: "Geometric & Classic", img: "/patterns/spine-1.png" },
+  { name: "Spine 2", category: "Geometric & Classic", img: "/patterns/spine-2.png" },
+  { name: "Square Spiral", category: "Geometric & Classic", img: "/patterns/square-spiral.png" },
+  { name: "Straight Line Stipple", category: "Geometric & Classic", img: "/patterns/straight-line-stipple.png" },
+  { name: "Tiger Tooth", category: "Geometric & Classic", img: "/patterns/tiger-tooth.png" },
+  { name: "Triangle Lacing", category: "Geometric & Classic", img: "/patterns/triangle-lacing.png" },
+  { name: "Triangle Loops", category: "Geometric & Classic", img: "/patterns/triangle-loops.png" },
+  { name: "Two Line Gap Piano Key", category: "Geometric & Classic", img: "/patterns/two-line-gap-piano-key.png" },
+  { name: "Wavy Cogs", category: "Geometric & Classic", img: "/patterns/wavy-cogs.png" },
+  { name: "Wrenchworks", category: "Geometric & Classic", img: "/patterns/wrenchworks.png" },
+  { name: "Zig Zag", category: "Geometric & Classic", img: "/patterns/zig-zag.png" },
   // Fun & Whimsical
-  { name: "Bunny and Stars E2E", category: "Fun & Whimsical" },
-  { name: "Dinosaurs", category: "Fun & Whimsical" },
+  { name: "Bunny and Stars E2E", category: "Fun & Whimsical", img: "/patterns/bunny-and-stars-e2e.png" },
+  { name: "Dinosaurs", category: "Fun & Whimsical", img: "/patterns/dinosaurs.png" },
 ];
 
-const categories: Category[] = [
-  "All",
-  "Floral & Botanical",
-  "Hearts",
-  "Swirls & Loops",
-  "Geometric & Classic",
-  "Fun & Whimsical",
-];
-
-const categoryStyles: Record<Category, { bg: string; text: string; badge: string; dot: string }> = {
-  "All":                { bg: "bg-rose-400",     text: "text-white",      badge: "bg-rose-100 text-rose-700",        dot: "bg-rose-400" },
-  "Floral & Botanical": { bg: "bg-rose-50",      text: "text-rose-700",   badge: "bg-rose-100 text-rose-600",        dot: "bg-rose-400" },
-  "Hearts":             { bg: "bg-red-50",       text: "text-red-700",    badge: "bg-red-100 text-red-600",          dot: "bg-red-400" },
-  "Swirls & Loops":     { bg: "bg-lavender-50",  text: "text-lavender-700", badge: "bg-lavender-100 text-lavender-700", dot: "bg-lavender-400" },
-  "Geometric & Classic":{ bg: "bg-sage-50",      text: "text-sage-700",   badge: "bg-sage-100 text-sage-700",        dot: "bg-sage-500" },
-  "Fun & Whimsical":    { bg: "bg-cream-200",    text: "text-taupe-700",  badge: "bg-cream-300 text-taupe-700",      dot: "bg-taupe-400" },
-};
-
-const categoryEmojis: Record<Category, string> = {
+const categories: Category[] = ["All", "Floral & Botanical", "Hearts", "Swirls & Loops", "Geometric & Classic", "Fun & Whimsical"];
+const categoryEmoji: Record<string, string> = {
   "All": "✨",
   "Floral & Botanical": "🌸",
-  "Hearts": "♥",
-  "Swirls & Loops": "〰",
+  "Hearts": "💕",
+  "Swirls & Loops": "🌀",
   "Geometric & Classic": "◇",
   "Fun & Whimsical": "🐰",
 };
 
 export default function PatternsPage() {
-  const [activeCategory, setActiveCategory] = useState<Category>("All");
   const [search, setSearch] = useState("");
+  const [activeCategory, setActiveCategory] = useState<Category>("All");
 
   const filtered = patterns.filter((p) => {
-    const matchesCat = activeCategory === "All" || p.category === activeCategory;
-    const matchesSearch = p.name.toLowerCase().includes(search.toLowerCase());
-    return matchesCat && matchesSearch;
+    const matchCat = activeCategory === "All" || p.category === activeCategory;
+    const matchSearch = p.name.toLowerCase().includes(search.toLowerCase());
+    return matchCat && matchSearch;
   });
-
-  const counts: Record<Category, number> = {
-    "All": patterns.length,
-    "Floral & Botanical": patterns.filter(p => p.category === "Floral & Botanical").length,
-    "Hearts": patterns.filter(p => p.category === "Hearts").length,
-    "Swirls & Loops": patterns.filter(p => p.category === "Swirls & Loops").length,
-    "Geometric & Classic": patterns.filter(p => p.category === "Geometric & Classic").length,
-    "Fun & Whimsical": patterns.filter(p => p.category === "Fun & Whimsical").length,
-  };
 
   return (
     <div className="min-h-screen bg-cream-50">
       {/* Header */}
-      <div className="py-14" style={{ background: "linear-gradient(135deg, #fde8f0 0%, #fdf3e8 100%)" }}>
+      <div className="py-14" style={{ background: "linear-gradient(135deg, #f8e0e8 0%, #fdf3e8 100%)" }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <div className="flex items-center gap-2 mb-3">
               <Scissors className="w-5 h-5 text-rose-400" />
               <span className="text-rose-400 font-medium text-sm">Pattern Catalog</span>
             </div>
-            <h1 className="text-4xl font-bold text-taupe-800 mb-3">Edge-to-Edge Design Catalog</h1>
-            <p className="text-taupe-500 max-w-2xl text-lg leading-relaxed">
-              Over <strong className="text-taupe-700">{patterns.length} designs</strong> to choose from — 
-              all from the HQ Designs / Continuous Line collection. Browse by category or search by name. 
-              Can't find what you love? Kevin can source a special design just for you.
+            <h1 className="text-4xl font-bold text-taupe-800 mb-3">Choose Your Design</h1>
+            <p className="text-taupe-500 max-w-2xl text-lg">
+              Browse {patterns.length}+ edge-to-edge designs from the HQ continuous line collection. 
+              Don&apos;t see what you&apos;re looking for? We can source special designs — just ask!
             </p>
           </motion.div>
         </div>
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+        {/* Search + Filter */}
+        <div className="flex flex-col sm:flex-row gap-4 mb-8">
+          <div className="relative flex-1 max-w-sm">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-taupe-400" />
+            <input
+              type="text"
+              placeholder="Search designs…"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="w-full pl-9 pr-4 py-2.5 border border-rose-100 rounded-xl text-sm bg-white focus:outline-none focus:ring-2 focus:ring-rose-300"
+            />
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
+                  activeCategory === cat
+                    ? "bg-rose-400 text-white shadow-sm"
+                    : "bg-white border border-rose-100 text-taupe-500 hover:border-rose-300"
+                }`}
+              >
+                {categoryEmoji[cat]} {cat}
+              </button>
+            ))}
+          </div>
+        </div>
 
-        {/* Category Cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 mb-8">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(cat)}
-              className={`rounded-2xl p-3 text-center transition-all border-2 ${
-                activeCategory === cat
-                  ? "border-rose-300 shadow-md bg-white"
-                  : "border-transparent bg-white hover:border-rose-100"
-              }`}
+        {/* Count */}
+        <p className="text-xs text-taupe-400 mb-5">
+          Showing {filtered.length} of {patterns.length} designs
+        </p>
+
+        {/* Pattern Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
+          {filtered.map((pattern, i) => (
+            <motion.div
+              key={pattern.name}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: Math.min(i * 0.02, 0.3) }}
+              className="bg-white rounded-2xl border border-rose-50 shadow-sm hover:shadow-md hover:border-rose-200 transition-all group overflow-hidden"
             >
-              <div className="text-xl mb-1">{categoryEmojis[cat]}</div>
-              <div className={`text-xs font-semibold leading-tight ${activeCategory === cat ? "text-rose-600" : "text-taupe-600"}`}>
-                {cat === "All" ? "All Designs" : cat}
+              <div className="aspect-square bg-cream-50 overflow-hidden p-2">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={pattern.img}
+                  alt={pattern.name}
+                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
               </div>
-              <div className={`text-xs mt-0.5 ${activeCategory === cat ? "text-rose-400" : "text-taupe-300"}`}>
-                {counts[cat]}
+              <div className="px-2 pb-2.5 pt-1.5">
+                <p className="text-taupe-700 text-xs font-medium leading-tight text-center">{pattern.name}</p>
+                <p className="text-taupe-300 text-[10px] text-center mt-0.5">{categoryEmoji[pattern.category]}</p>
               </div>
-            </button>
+            </motion.div>
           ))}
         </div>
 
-        {/* Search */}
-        <div className="relative mb-6">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-taupe-300" />
-          <input
-            type="text"
-            placeholder="Search by design name..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-11 pr-4 py-3 border border-rose-100 rounded-2xl text-sm bg-white focus:outline-none focus:ring-2 focus:ring-rose-200 shadow-sm"
-          />
-          {search && (
-            <button onClick={() => setSearch("")} className="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-taupe-400 hover:text-rose-400">
-              Clear
-            </button>
-          )}
-        </div>
-
-        <div className="mb-4 text-sm text-taupe-400">
-          Showing <span className="font-semibold text-taupe-700">{filtered.length}</span> design{filtered.length !== 1 ? "s" : ""}
-          {activeCategory !== "All" ? <span> · <span className="text-rose-400">{activeCategory}</span></span> : ""}
-        </div>
-
-        {/* Pattern Grid — compact list cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2.5">
-          {filtered.map((pattern, i) => {
-            const style = categoryStyles[pattern.category];
-            return (
-              <motion.div
-                key={pattern.name}
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: Math.min(i * 0.02, 0.4) }}
-                className="bg-white rounded-2xl border border-rose-50 p-3 hover:shadow-sm transition-shadow group"
-              >
-                <div className={`w-6 h-1.5 rounded-full ${style.dot} mb-2`} />
-                <div className="font-medium text-taupe-700 text-xs leading-snug mb-1.5">{pattern.name}</div>
-                <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${style.badge}`}>
-                  {pattern.category === "Floral & Botanical" ? "Floral" :
-                   pattern.category === "Geometric & Classic" ? "Geometric" :
-                   pattern.category === "Fun & Whimsical" ? "Whimsical" :
-                   pattern.category === "Swirls & Loops" ? "Swirls" :
-                   pattern.category}
-                </span>
-              </motion.div>
-            );
-          })}
-        </div>
-
         {filtered.length === 0 && (
-          <div className="text-center py-16 text-taupe-300">
-            <Scissors className="w-10 h-10 mx-auto mb-3 opacity-30" />
-            <p className="text-sm">No designs match "{search}"</p>
-            <button onClick={() => { setSearch(""); setActiveCategory("All"); }} className="mt-2 text-rose-400 text-sm hover:underline">
-              Clear filters
-            </button>
+          <div className="text-center py-16 text-taupe-400">
+            <p className="text-lg mb-1">No designs match your search.</p>
+            <p className="text-sm">Try a different keyword or browse all categories.</p>
           </div>
         )}
 
-        {/* Custom Design CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-          className="mt-10 rounded-3xl p-8 text-center border border-rose-100"
-          style={{ background: "linear-gradient(135deg, #fdf0f4 0%, #fdf7f0 100%)" }}
-        >
-          <Sparkles className="w-8 h-8 text-rose-300 mx-auto mb-3" />
-          <h3 className="font-bold text-taupe-700 text-xl mb-2">Don't See What You're Dreaming Of?</h3>
-          <p className="text-taupe-400 text-sm mb-2 max-w-lg mx-auto leading-relaxed">
-            If you have a particular design in mind that's not in this catalog, just ask. 
-            Kevin can source special designs for you — the cost of the design will simply be 
-            added to your quilting bill.
-          </p>
-          <p className="text-taupe-300 text-xs mb-5">All designs are from the HQ Designs / Continuous Line collection.</p>
-          <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <a href="tel:4057781440"
-              className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-rose-400 hover:bg-rose-500 text-white text-sm font-medium rounded-full transition-colors shadow-sm">
-              Call / Text (405) 778-1440
-            </a>
-            <a href="mailto:kevin@lqs.llc"
-              className="inline-flex items-center justify-center gap-2 px-6 py-2.5 border border-rose-200 text-rose-500 hover:bg-rose-50 text-sm font-medium rounded-full transition-colors bg-white">
-              Email Kevin@LQS.LLC
-            </a>
+        {/* Custom design CTA */}
+        <div className="mt-12 bg-rose-50 border border-rose-100 rounded-2xl p-6 flex items-start gap-4">
+          <Sparkles className="w-6 h-6 text-rose-400 mt-0.5 shrink-0" />
+          <div>
+            <h3 className="font-semibold text-taupe-700 mb-1">Don&apos;t see the perfect design?</h3>
+            <p className="text-taupe-500 text-sm leading-relaxed">
+              If you have a particular design in mind that isn&apos;t in our catalog, Kevin can source it for you. 
+              The cost of the design will be added to your quilting bill.{" "}
+              <a href="/about" className="text-rose-500 hover:text-rose-600 font-medium underline underline-offset-2">
+                Contact us to discuss →
+              </a>
+            </p>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
