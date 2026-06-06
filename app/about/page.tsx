@@ -79,9 +79,9 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-3">
                 {[
                   { icon: Shield, title: "Veteran-Owned", desc: "Proud veteran-owned small business", bg: "bg-rose-50", iconColor: "text-rose-400" },
-                  { icon: MapPin, title: "Moore, OK", desc: "Locally serving the community", bg: "bg-lavender-50", iconColor: "text-lavender-500" },
+                  { icon: MapPin, title: "Moore, OK", desc: "Serving the 405 community", bg: "bg-lavender-50", iconColor: "text-lavender-500" },
                   { icon: Star, title: "Quality First", desc: "Premium materials every time", bg: "bg-sage-50", iconColor: "text-sage-500" },
-                  { icon: Users, title: "Community Member", desc: "Chamber of Commerce & Rotary Club", bg: "bg-cream-200", iconColor: "text-taupe-500" },
+                  { icon: Users, title: "Community Member", desc: "Rotary Club & Chamber of Commerce", bg: "bg-cream-200", iconColor: "text-taupe-500" },
                 ].map((item, i) => (
                   <Card key={i} className={`border-0 ${item.bg}`}>
                     <CardContent className="p-4">
@@ -138,70 +138,7 @@ export default function AboutPage() {
             </motion.div>
           </div>
 
-          {/* Contact Form */}
-          <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }}>
-            <Card className="border-rose-100 shadow-sm bg-white">
-              <CardContent className="p-6 md:p-8">
-                <h2 className="text-2xl font-bold text-taupe-800 mb-1">Get a Quote</h2>
-                <p className="text-taupe-400 text-sm mb-6">
-                  Fill out the form and Kevin will get back to you quickly to confirm availability and answer any questions.
-                </p>
-
-                {submitted ? (
-                  <div className="text-center py-10">
-                    <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <CheckCircle className="w-8 h-8 text-rose-400" />
-                    </div>
-                    <h3 className="text-xl font-bold text-taupe-700 mb-2">Message Sent!</h3>
-                    <p className="text-taupe-400 text-sm mb-2">Thank you for reaching out. Kevin will be in touch soon.</p>
-                    <p className="text-taupe-300 text-xs">Fastest response: call or text (405) 778-1440</p>
-                    <Button onClick={() => { setSubmitted(false); setForm({ name: "", email: "", phone: "", quiltSize: "", message: "" }); }}
-                      variant="outline" className="mt-5 border-rose-200 text-rose-500 hover:bg-rose-50 rounded-full">
-                      Send Another Message
-                    </Button>
-                  </div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div>
-                        <label className="block text-xs font-medium text-taupe-500 mb-1.5">Your Name *</label>
-                        <input required type="text" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })}
-                          placeholder="Jane Smith"
-                          className="w-full border border-rose-100 rounded-xl px-4 py-2.5 text-sm bg-cream-50 focus:outline-none focus:ring-2 focus:ring-rose-200 focus:border-transparent" />
-                      </div>
-                      <div>
-                        <label className="block text-xs font-medium text-taupe-500 mb-1.5">Phone / Text</label>
-                        <input type="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                          placeholder="(405) 000-0000"
-                          className="w-full border border-rose-100 rounded-xl px-4 py-2.5 text-sm bg-cream-50 focus:outline-none focus:ring-2 focus:ring-rose-200 focus:border-transparent" />
-                      </div>
-                    </div>
-                    <div>
-                      <label className="block text-xs font-medium text-taupe-500 mb-1.5">Email Address *</label>
-                      <input required type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })}
-                        placeholder="your@email.com"
-                        className="w-full border border-rose-100 rounded-xl px-4 py-2.5 text-sm bg-cream-50 focus:outline-none focus:ring-2 focus:ring-rose-200 focus:border-transparent" />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-medium text-taupe-500 mb-1.5">Quilt Dimensions (optional)</label>
-                      <input type="text" value={form.quiltSize} onChange={(e) => setForm({ ...form, quiltSize: e.target.value })}
-                        placeholder='e.g. 60″ × 80″ queen-size top'
-                        className="w-full border border-rose-100 rounded-xl px-4 py-2.5 text-sm bg-cream-50 focus:outline-none focus:ring-2 focus:ring-rose-200 focus:border-transparent" />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-medium text-taupe-500 mb-1.5">Message / Questions</label>
-                      <textarea rows={4} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })}
-                        placeholder="Tell Kevin about your quilt, your pattern preference, or any questions..."
-                        className="w-full border border-rose-100 rounded-xl px-4 py-2.5 text-sm bg-cream-50 focus:outline-none focus:ring-2 focus:ring-rose-200 focus:border-transparent resize-none" />
-                    </div>
-                    <Button type="submit" className="w-full bg-rose-400 hover:bg-rose-500 text-white font-semibold py-3 rounded-full shadow-sm">
-                      <Send className="w-4 h-4 mr-2" /> Send Message
-                    </Button>
-                    <p className="text-xs text-taupe-300 text-center">
-                      Or reach out directly: <a href="tel:4057781440" className="text-rose-400 hover:underline">(405) 778-1440</a>
-                    </p>
-                  </form>
-                )}
+          
               </CardContent>
             </Card>
           </motion.div>
