@@ -68,7 +68,6 @@ export default function ServicesPage() {
                   </div>
                   <div className="space-y-2">
                     {[
-                      ["Table Runner (14″×45″)", 14, 45],
                       ["Throw (50″×60″)", 50, 60],
                       ["Twin (60″×80″)", 60, 80],
                       ["Full/Double (80″×90″)", 80, 90],
