@@ -68,8 +68,8 @@ export default function ServicesPage() {
                   </div>
                   <div className="space-y-2">
                     {[
-                      ["Minimum Quilting Fee", 51, 54],
-                      ["Quilted Jacket", 50, 57],
+                      ["Minimum Quilting Fee", 1300, 2],
+                      ["Quilted Jacket", 50, 63],
                       ["Throw (50″×60″)", 50, 60],
                       ["Twin (60″×80″)", 60, 80],
                       ["Full/Double (80″×90″)", 80, 90],
