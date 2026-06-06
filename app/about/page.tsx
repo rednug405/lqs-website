@@ -102,7 +102,7 @@ export default function AboutPage() {
                     <MapPin className="w-4 h-4 text-rose-400 mt-0.5 shrink-0" />
                     <div>
                       <div className="font-medium text-taupe-700 text-sm">Studio Address</div>
-                      <div className="text-taupe-400 text-sm">121 W. Main St, Suite 104<br />Moore, OK 73150</div>
+                      <div className="text-rose-400 text-sm">121 W. Main St, Suite 104<br />Moore, OK 73150</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
