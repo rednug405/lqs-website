@@ -69,7 +69,7 @@ export default function ServicesPage() {
                   <div className="space-y-2">
                     {[
                       ["Minimum Quilting Fee", 1300, 2],
-                      ["Quilted Jacket starts at", 3400, 2],
+                      ["Quilted Jacket starts at", 1700, 2],
                       ["Throw (50″×60″)", 50, 60],
                       ["Twin (60″×80″)", 60, 80],
                       ["Full/Double (80″×90″)", 80, 90],
