@@ -357,7 +357,7 @@ export default function HomePage() {
       {/* CTA */}
       <section className="py-14" style={{ background: "linear-gradient(135deg, #f2c4d2 0%, #e4d9cc 100%)" }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <DollarSign className="w-10 h-10 text-rose-400 mx-auto mb-3 opacity-60" />
+          <Heart className="w-10 h-10 text-rose-400 mx-auto mb-3 opacity-60" />
           <h2 className="text-2xl md:text-3xl font-bold text-taupe-800 mb-3">
             Ready to finish your quilt?
           </h2>
