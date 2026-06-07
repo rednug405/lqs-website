@@ -134,7 +134,7 @@ export default function HomePage() {
               </h1>
 
               <p className="text-lg md:text-xl text-taupe-500 mb-8 leading-relaxed max-w-2xl">
-                Affordable longarm quilting right here in Moore, Oklahoma. Batting and thread included — 
+                Affordable longarm quilting service (LQS) right here in Moore, Oklahoma. Batting and thread included — 
                 just bring your quilt top and backing. Simple pricing, beautiful results, personal service.
               </p>
 
