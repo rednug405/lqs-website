@@ -65,7 +65,7 @@ export function Footer() {
 
         <div className="border-t border-taupe-700 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-taupe-500">
           <span>© {new Date().getFullYear()} LQS LLC. All rights reserved. Moore, OK 73150.</span>
-          <span className="flex items-center gap-1">Made with <Heart className="w-3 h-3 text-rose-400 fill-rose-400" /> · Moore Chamber of Commerce &amp; Rotary Club Member</span>
+          <span className="flex items-center gap-1">Made with <Heart className="w-3 h-3 text-rose-400 fill-rose-400" /> · Moore Chamber of Commerce Member</span>
         </div>
       </div>
     </footer>

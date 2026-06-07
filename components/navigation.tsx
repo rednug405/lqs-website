@@ -61,7 +61,7 @@ export function Navigation() {
               <Phone className="w-4 h-4" />
               (405) 778-1440
             </a>
-            
+
           </div>
 
           {/* Mobile Menu Button */}

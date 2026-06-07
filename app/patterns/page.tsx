@@ -67,8 +67,6 @@ const patterns: Pattern[] = [
   { name: "Heart Trio Triangle", category: "Hearts", img: "/patterns/heart-trio-triangle.png" },
   { name: "Red Hot Hearts", category: "Hearts", img: "/patterns/red-hot-hearts.png" },
   // Swirls & Loops
-  { name: "UE-meandering", category: "Swirls & Loops", img: "/patterns/UE-meandering.png" },
-  { name: "UE-Loop the Loop", category: "Swirls & Loops", img: "/patterns/UE-Loop the Loop.png" },
   { name: "Alternating Loops 1", category: "Swirls & Loops", img: "/patterns/alternating-loops-1.png" },
   { name: "Alternating Loops 2", category: "Swirls & Loops", img: "/patterns/alternating-loops-2.png" },
   { name: "Balloon Continuous Line", category: "Swirls & Loops", img: "/patterns/balloon-continuous-line.png" },
@@ -97,10 +95,6 @@ const patterns: Pattern[] = [
   { name: "Water Meander", category: "Swirls & Loops", img: "/patterns/water-meander.png" },
   { name: "Wind", category: "Swirls & Loops", img: "/patterns/wind.png" },
   // Geometric & Classic
-  { name: "UE-Hexi", category: "Geometric & Classic", img: "/patterns/UE-Hexi.png" },
-  { name: "UE-Alternating Baptist Fan", category: "Geometric & Classic", img: "/patterns/UE-Alternating Baptist Fan.png" },
-  { name: "UE-Snow Crystals", category: "Geometric & Classic", img: "/patterns/UE-Snow Crystals.png" },
-  { name: "UE-Stars", category: "Geometric & Classic", img: "/patterns/UE-Stars.png" },
   { name: "Baptist Fan", category: "Geometric & Classic", img: "/patterns/baptist-fan.png" },
   { name: "Bubble Scale", category: "Geometric & Classic", img: "/patterns/bubble-scale.png" },
   { name: "Cat Eyes 2", category: "Geometric & Classic", img: "/patterns/cat-eyes-2.png" },
@@ -140,9 +134,6 @@ const patterns: Pattern[] = [
   // Fun & Whimsical
   { name: "Bunny and Stars E2E", category: "Fun & Whimsical", img: "/patterns/bunny-and-stars-e2e.png" },
   { name: "Dinosaurs", category: "Fun & Whimsical", img: "/patterns/dinosaurs.png" },
-  { name: "UE-Animal Crackers", category: "Fun & Whimsical", img: "/patterns/UE-Animal Crackers.png" },
-  { name: "UE-Halloween", category: "Fun & Whimsical", img: "/patterns/UE-Holloween.png" },
-
 ];
 
 const categories: Category[] = ["All", "Floral & Botanical", "Hearts", "Swirls & Loops", "Geometric & Classic", "Fun & Whimsical"];

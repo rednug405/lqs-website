@@ -68,8 +68,6 @@ export default function ServicesPage() {
                   </div>
                   <div className="space-y-2">
                     {[
-                      ["Minimum Quilting Fee", 1300, 2],
-                      ["Quilted Jacket starts at", 1700, 2],
                       ["Throw (50″×60″)", 50, 60],
                       ["Twin (60″×80″)", 60, 80],
                       ["Full/Double (80″×90″)", 80, 90],
@@ -82,6 +80,16 @@ export default function ServicesPage() {
                         </span>
                       </div>
                     ))}
+                    <div className="flex justify-between items-center py-2.5 border-b border-cream-200">
+                      <div>
+                        <span className="text-sm text-taupe-600">Quilted Jacket</span>
+                        <span className="ml-2 text-xs text-lavender-500 bg-lavender-50 px-2 py-0.5 rounded-full font-medium">Custom Quilting</span>
+                      </div>
+                      <span className="font-semibold text-rose-500 bg-rose-50 px-3 py-0.5 rounded-full text-sm">Starting at $85</span>
+                    </div>
+                  </div>
+                  <div className="mt-4 bg-sage-50 border border-sage-200 rounded-xl px-4 py-3 text-sm text-taupe-600 leading-relaxed">
+                    <strong className="text-sage-700">Please note:</strong> A minimum charge of <strong className="text-taupe-700">$65.00</strong> applies to all longarm quilting services, regardless of quilt size.
                   </div>
                 </div>
 

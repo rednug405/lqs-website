@@ -55,12 +55,9 @@ export default function AboutPage() {
                     creativity that goes into piecing — and he&apos;ll make sure the quilting does it justice.
                   </p>
                   <p>
-                    Kevin is proud to be a member of the Moore Chamber of Commerce and the Moore Rotary Club, 
-                    and part of the <a href="https://www.rednug.llc/" className="text-rose-400 hover:underline">rednug® LLC</a> family of veteran-owned businesses serving the Moore, Oklahoma community.
-                    10% of all sales are donated to a military organization.
+                    LQS LLC is proud to be a member of the Moore Chamber of Commerce and the Moore Rotary Club, 
+                    and part of the rednug LLC family of veteran-owned businesses serving the Moore, Oklahoma community.
                   </p>
-                  <p>
-                  Kevin's wife, Joyce, has her business, <a href="https://www.seamscreations.com/" className="text-rose-400 hover:underline">Seams Creations LLC</a> sewing classes, and your source for bag making notions, is conveniently located next door (suite 102).</p>
                 </div>
               </CardContent>
             </Card>
@@ -72,7 +69,7 @@ export default function AboutPage() {
                 { icon: Shield, title: "Veteran-Owned", desc: "Proud veteran-owned small business", bg: "bg-rose-50", iconColor: "text-rose-400" },
                 { icon: MapPin, title: "Moore, OK", desc: "Locally serving the community", bg: "bg-lavender-50", iconColor: "text-lavender-500" },
                 { icon: Star, title: "Quality First", desc: "Premium materials every time", bg: "bg-sage-50", iconColor: "text-sage-500" },
-                { icon: Users, title: "Community Member", desc: "Rotary Club & Chamber of Commerce", bg: "bg-cream-200", iconColor: "text-taupe-500" },
+                { icon: Users, title: "Chamber Member", desc: "Moore Chamber of Commerce", bg: "bg-cream-200", iconColor: "text-taupe-500" },
               ].map((item, i) => (
                 <Card key={i} className={`border-0 ${item.bg}`}>
                   <CardContent className="p-4">
@@ -93,7 +90,7 @@ export default function AboutPage() {
                   <MapPin className="w-4 h-4 text-rose-400 mt-0.5 shrink-0" />
                   <div>
                     <div className="font-medium text-taupe-700 text-sm">Studio Address</div>
-                    <div className="text-rose-400 text-sm">121 W. Main St, Suite 104<br />Moore, OK 73150</div>
+                    <div className="text-taupe-400 text-sm">121 W. Main St, Suite 104<br />Moore, OK 73150</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
