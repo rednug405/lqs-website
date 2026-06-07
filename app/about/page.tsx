@@ -57,6 +57,7 @@ export default function AboutPage() {
                   <p>
                     LQS LLC is proud to be a member of the Moore Chamber of Commerce and the Moore Rotary Club, 
                     and part of the rednug LLC family of veteran-owned businesses serving the Moore, Oklahoma community.
+                    <c>10% of all sales are donated to a military organization.</c>
                   </p>
                 </div>
               </CardContent>
@@ -69,7 +70,7 @@ export default function AboutPage() {
                 { icon: Shield, title: "Veteran-Owned", desc: "Proud veteran-owned small business", bg: "bg-rose-50", iconColor: "text-rose-400" },
                 { icon: MapPin, title: "Moore, OK", desc: "Locally serving the community", bg: "bg-lavender-50", iconColor: "text-lavender-500" },
                 { icon: Star, title: "Quality First", desc: "Premium materials every time", bg: "bg-sage-50", iconColor: "text-sage-500" },
-                { icon: Users, title: "Chamber Member", desc: "Moore Chamber of Commerce", bg: "bg-cream-200", iconColor: "text-taupe-500" },
+                { icon: Users, title: "Community Member", desc: "Rotary Club & Chamber of Commerce", bg: "bg-cream-200", iconColor: "text-taupe-500" },
               ].map((item, i) => (
                 <Card key={i} className={`border-0 ${item.bg}`}>
                   <CardContent className="p-4">
