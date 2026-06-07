@@ -61,9 +61,7 @@ export function Navigation() {
               <Phone className="w-4 h-4" />
               (405) 778-1440
             </a>
-            <Button asChild size="sm" className="bg-rose-400 hover:bg-rose-500 text-white shadow-sm rounded-full px-5">
-              <Link href="/about">Get a Quote</Link>
-            </Button>
+            
           </div>
 
           {/* Mobile Menu Button */}
