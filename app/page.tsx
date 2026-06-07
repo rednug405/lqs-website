@@ -247,10 +247,12 @@ export default function HomePage() {
               <div className="p-8 bg-white/50 flex flex-col justify-center">
                 <div className="space-y-2.5">
                   {[
-                    ["Throw (50″×60″)", "$75.00"],
-                    ["Twin (60″×80″)", "$120.00"],
-                    ["Full/Double (80″×90″)", "$180.00"],
-                    ["Queen (90″×108″)", "$243.00"],
+                    ["Minimum Quilting Fee", "$65"],
+                      ["Quilted Jacket starts at", "$85"],
+                      ["Throw (50″×60″)", "$75"],
+                      ["Twin (60″×80″)", "$120"],
+                      ["Full/Double (80″×90″)", "$180"],
+                      ["Queen (90″×108″)", "$243"],
                   ].map(([size, price]) => (
                     <div key={size} className="flex justify-between items-center bg-white rounded-xl px-4 py-2.5 border border-rose-50 shadow-sm">
                       <span className="text-taupe-600 text-sm">{size}</span>
