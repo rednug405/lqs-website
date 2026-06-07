@@ -55,12 +55,12 @@ export default function AboutPage() {
                     creativity that goes into piecing — and he&apos;ll make sure the quilting does it justice.
                   </p>
                   <p>
-                    LQS LLC is proud to be a member of the Moore Chamber of Commerce and the Moore Rotary Club, 
+                    Kevin is proud to be a member of the Moore Chamber of Commerce and the Moore Rotary Club, 
                     and part of the <a href="https://www.rednug.llc/" className="text-rose-400 hover:underline">rednug® LLC</a> family of veteran-owned businesses serving the Moore, Oklahoma community.
                     10% of all sales are donated to a military organization.
                   </p>
                   <p>
-                  <a href="https://www.seamscreations.com/" className="text-rose-400 hover:underline">Seams Creations LLC</a> sewing classes, and your source for bag making notions, is conveniently located next door (suite 102).</p>
+                  Kevin's wife, Joyce, has her business, <a href="https://www.seamscreations.com/" className="text-rose-400 hover:underline">Seams Creations LLC</a> sewing classes, and your source for bag making notions, is conveniently located next door (suite 102).</p>
                 </div>
               </CardContent>
             </Card>
