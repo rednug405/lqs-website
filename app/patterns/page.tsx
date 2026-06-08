@@ -95,6 +95,10 @@ const patterns: Pattern[] = [
   { name: "Water Meander", category: "Swirls & Loops", img: "/patterns/water-meander.png" },
   { name: "Wind", category: "Swirls & Loops", img: "/patterns/wind.png" },
   // Geometric & Classic
+  { name: "Alternating Baptist Fan", category: "Geometric & Classic", img: "/patterns/UE-Alternating Baptist Fan.png" }
+  { name: "UE-Hexi", category: "Geometric & Classic", img: "/patterns/UE-Hexi.png" }
+  { name: "UE-Snow Crystals", category: "Geometric & Classic", img: "/patterns/UE-Snow Crystals.png" }
+  { name: "UE-Stars", category: "Geometric & Classic", img: "/patterns/UE-Stars.png" }
   { name: "Baptist Fan", category: "Geometric & Classic", img: "/patterns/baptist-fan.png" },
   { name: "Bubble Scale", category: "Geometric & Classic", img: "/patterns/bubble-scale.png" },
   { name: "Cat Eyes 2", category: "Geometric & Classic", img: "/patterns/cat-eyes-2.png" },
@@ -132,6 +136,10 @@ const patterns: Pattern[] = [
   { name: "Wrenchworks", category: "Geometric & Classic", img: "/patterns/wrenchworks.png" },
   { name: "Zig Zag", category: "Geometric & Classic", img: "/patterns/zig-zag.png" },
   // Fun & Whimsical
+  { name: "UE-Animal Crackers", category: "Fun & Whimsical", img: "/patterns/UE-Animal Crackers.png" }
+  { name: "UE-Halloween", category: "Fun & Whimsical", img: "/patterns/UE-Holloween.png" }
+  { name: "UE-Animal Crackers", category: "Fun & Whimsical", img: "/patterns/UE-Animal Crackers.png" }
+  { name: "UE-Halloween", category: "Fun & Whimsical", img: "/patterns/UE-Holloween.png" }
   { name: "Bunny and Stars E2E", category: "Fun & Whimsical", img: "/patterns/bunny-and-stars-e2e.png" },
   { name: "Dinosaurs", category: "Fun & Whimsical", img: "/patterns/dinosaurs.png" },
 ];
