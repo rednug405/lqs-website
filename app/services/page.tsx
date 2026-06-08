@@ -33,7 +33,7 @@ export default function ServicesPage() {
             </div>
             <h1 className="text-4xl font-bold text-taupe-800 mb-3">What We Offer</h1>
             <p className="text-taupe-500 max-w-2xl text-lg">
-              Straightforward edge-to-edge longarm quilting at a single affordable rate. 
+              Straightforward edge-to-edge (E2E) longarm quilting at a single affordable rate. 
               Batting and thread are included — no surprises, ever.
             </p>
           </motion.div>
@@ -89,7 +89,7 @@ export default function ServicesPage() {
                     </div>
                   </div>
                   <div className="mt-4 bg-sage-50 border border-sage-200 rounded-xl px-4 py-3 text-sm text-taupe-600 leading-relaxed">
-                    <strong className="text-sage-700">Please note:</strong> A minimum charge of <strong className="text-taupe-700">$65.00</strong> applies to all longarm quilting services, regardless of quilt size.
+                    <strong className="text-sage-700">Please note:</strong> A minimum charge of <strong className="text-taupe-700">$50</strong> applies to all longarm quilting services, regardless of quilt size.
                   </div>
                 </div>
 
