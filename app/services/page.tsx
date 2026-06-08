@@ -183,7 +183,7 @@ export default function ServicesPage() {
                   <div className="font-medium text-taupe-700 text-sm">Edge-to-Edge Pattern Quilting</div>
                   <p className="text-taupe-400 text-xs mt-1 leading-relaxed">
                     Your chosen design quilted across the entire quilt. Browse our pattern catalog or 
-                    request a special design — we can source it for you (design cost added to your bill).
+                    request a special design — we can source it for you (a sourced design cost added to your bill).
                   </p>
                 </div>
               </div>
@@ -245,10 +245,9 @@ export default function ServicesPage() {
               <div className="flex items-start gap-3">
                 <XCircle className="w-5 h-5 text-taupe-300 mt-0.5 shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-taupe-600 mb-1 text-sm">Binding Not Currently Offered</h3>
+                  <h3 className="font-semibold text-taupe-600 mb-1 text-sm">Binding Service</h3>
                   <p className="text-taupe-400 text-xs leading-relaxed">
-                    We do not currently provide binding services. Your finished quilt will be returned 
-                    ready for you to bind. We may add this service in the future — check back!
+                    A binding service is available right next door by Joyce (Kevin's wife) at <a "https://www.seamscreations.com"> Seams Creations LLC</a>
                   </p>
                 </div>
               </div>
