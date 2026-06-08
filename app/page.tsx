@@ -54,7 +54,7 @@ const whyUs = [
   "Premium 80/20 batting provided at no extra charge",
   "#60 Glide thread with matching color bobbin",
   "Locally based in Moore, OK — convenient drop-off",
-  "E2E designs available — we can source it for you",
+  "E2E designs available - If we don't have what you want, we can source it for you",
   "Moore Rotary and Chamber of Commerce member",
 ];
 
@@ -133,7 +133,7 @@ export default function HomePage() {
               </h1>
 
               <p className="text-lg md:text-xl text-taupe-500 mb-8 leading-relaxed max-w-2xl">
-                Affordable longarm quilting right here in Moore, Oklahoma — serving Moore, Norman, Midwest City, and the greater OKC area. Batting and thread included. Just bring your quilt top and backing.
+                Affordable longarm quilting service right here in Moore, Oklahoma — serving Moore, Norman, Midwest City, and the greater OKC area. Batting and thread included. Just bring your quilt top and backing.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3">
@@ -166,7 +166,7 @@ export default function HomePage() {
               ["$0.025 / sq in", "Simple flat rate"],
               ["Batting Included", "80/20 blend"],
               ["Thread Included", "#60 Glide with matching bobbin"],
-              ["Custom Designs", "We can source it for you"],
+              ["E2E Designs", "We can source it for you"],
             ].map(([value, label]) => (
               <div key={label} className="flex items-center gap-2 text-center sm:text-left">
                 <Sparkles className="w-4 h-4 text-rose-200 shrink-0" />
@@ -245,10 +245,10 @@ export default function HomePage() {
               <div className="p-8 bg-white/50 flex flex-col justify-center">
                 <div className="space-y-2.5">
                   {[
-                    ["Throw (50″×60″)", "$75.00"],
-                    ["Twin (60″×80″)", "$120.00"],
-                    ["Full/Double (80″×90″)", "$180.00"],
-                    ["Queen (90″×108″)", "$243.00"],
+                    ["Throw (50″×60″)", "$75"],
+                    ["Twin (60″×80″)", "$120"],
+                    ["Full/Double (80″×90″)", "$180"],
+                    ["Queen (90″×108″)", "$243"],
                     ["Quitled Jackets start at", "$85"]
                   ].map(([size, price]) => (
                     <div key={size} className="flex justify-between items-center bg-white rounded-xl px-4 py-2.5 border border-rose-50 shadow-sm">
@@ -356,7 +356,7 @@ export default function HomePage() {
       {/* CTA */}
       <section className="py-14" style={{ background: "linear-gradient(135deg, #f2c4d2 0%, #e4d9cc 100%)" }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-          <DollarSign className="w-10 h-10 text-rose-400 mx-auto mb-3 opacity-60" />
+          <Heart className="w-10 h-10 text-rose-400 mx-auto mb-3 opacity-60" />
           <h2 className="text-2xl md:text-3xl font-bold text-taupe-800 mb-3">
             Ready to finish your quilt?
           </h2>
