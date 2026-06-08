@@ -32,7 +32,7 @@ export default function ServicesPage() {
               <span className="text-rose-400 font-medium text-sm">Services & Pricing</span>
             </div>
             <h1 className="text-4xl font-bold text-taupe-800 mb-3">What We Offer</h1>
-            <p className="text-taupe-500 max-w-2xl text-lg">
+            <p className="text-black-500 max-w-2xl text-lg">
               Straightforward edge-to-edge (E2E) longarm quilting at a single affordable rate. 
               Batting and thread are included — no surprises, ever.
             </p>
@@ -54,17 +54,17 @@ export default function ServicesPage() {
             <CardContent className="p-6 bg-white">
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <p className="text-taupe-500 mb-4 text-sm leading-relaxed">
+                  <p className="text-black-500 mb-4 text-sm leading-relaxed">
                     All edge-to-edge quilting is priced at a flat{" "}
                     <strong className="text-rose-500">$0.025 per square inch</strong> for a 
                     simple design that does not re-trace over itself.
                   </p>
                   <div className="bg-rose-50 rounded-2xl border border-rose-100 p-4 mb-5">
-                    <div className="text-xs text-taupe-400 uppercase tracking-wide mb-1">Pricing Formula</div>
+                    <div className="text-xs text-black-400 uppercase tracking-wide mb-1">Pricing Formula</div>
                     <div className="font-mono text-rose-500 font-bold text-xl">
                       Width × Length × $0.025
                     </div>
-                    <div className="text-xs text-taupe-400 mt-1">All measurements in inches</div>
+                    <div className="text-xs text-black-400 mt-1">All measurements in inches</div>
                   </div>
                   <div className="space-y-2">
                     {[
@@ -100,7 +100,7 @@ export default function ServicesPage() {
                       <Calculator className="w-4 h-4 text-rose-400" />
                       <h3 className="font-semibold text-taupe-700">Price Calculator</h3>
                     </div>
-                    <p className="text-xs text-taupe-400 mb-4">Enter your quilt top's dimensions in inches.</p>
+                    <p className="text-xs text-black-400 mb-4">Enter your quilt top's dimensions in inches.</p>
                     <div className="space-y-3 mb-4">
                       <div>
                         <label className="block text-xs font-medium text-taupe-600 mb-1.5">Width (inches)</label>
@@ -160,7 +160,7 @@ export default function ServicesPage() {
                 <Package className="w-5 h-5 text-sage-500 mt-0.5 shrink-0" />
                 <div>
                   <div className="font-medium text-taupe-700 text-sm">80/20 Blend Batting</div>
-                  <p className="text-taupe-400 text-xs mt-1 leading-relaxed">
+                  <p className="text-black-400 text-xs mt-1 leading-relaxed">
                     High-quality 80% cotton / 20% polyester batting for the perfect weight and feel. 
                     You may supply your own, but we reserve the right to decline batting we consider 
                     unsuitable.
@@ -171,7 +171,7 @@ export default function ServicesPage() {
                 <Zap className="w-5 h-5 text-sage-500 mt-0.5 shrink-0" />
                 <div>
                   <div className="font-medium text-taupe-700 text-sm">#60 Glide Thread</div>
-                  <p className="text-taupe-400 text-xs mt-1 leading-relaxed">
+                  <p className="text-black-400 text-xs mt-1 leading-relaxed">
                     Premium #60 Glide thread on top with a matching color bobbin for a beautiful, 
                     consistent finish throughout your quilt.
                   </p>
@@ -181,7 +181,7 @@ export default function ServicesPage() {
                 <Scissors className="w-5 h-5 text-sage-500 mt-0.5 shrink-0" />
                 <div>
                   <div className="font-medium text-taupe-700 text-sm">Edge-to-Edge Pattern Quilting</div>
-                  <p className="text-taupe-400 text-xs mt-1 leading-relaxed">
+                  <p className="text-black-400 text-xs mt-1 leading-relaxed">
                     Your chosen design quilted across the entire quilt. Browse our pattern catalog or 
                     request a special design — we can source it for you (a sourced design cost added to your bill).
                   </p>
@@ -202,7 +202,7 @@ export default function ServicesPage() {
                 <CheckCircle className="w-5 h-5 text-lavender-500 mt-0.5 shrink-0" />
                 <div>
                   <div className="font-medium text-taupe-700 text-sm">Your Quilt Top</div>
-                  <p className="text-taupe-400 text-xs mt-1 leading-relaxed">
+                  <p className="text-black-400 text-xs mt-1 leading-relaxed">
                     Pressed and squared up, with seams trimmed and lying flat. Let us know about 
                     any special considerations at drop-off.
                   </p>
@@ -212,7 +212,7 @@ export default function ServicesPage() {
                 <CheckCircle className="w-5 h-5 text-lavender-500 mt-0.5 shrink-0" />
                 <div>
                   <div className="font-medium text-taupe-700 text-sm">Backing Material</div>
-                  <p className="text-taupe-400 text-xs mt-1 leading-relaxed">
+                  <p className="text-black-400 text-xs mt-1 leading-relaxed">
                     Backing is <strong className="text-taupe-600">not provided</strong>. You must supply at least{" "}
                     <strong className="text-taupe-600">4″ extra on all four sides</strong> beyond your quilt top's 
                     measurements. (Example: 60×80 top → backing should be at least 68×88.)
@@ -229,7 +229,7 @@ export default function ServicesPage() {
             <Sparkles className="w-5 h-5 text-rose-400 mt-0.5 shrink-0" />
             <div>
               <div className="font-semibold text-taupe-700 mb-1">Want a Special Design?</div>
-              <p className="text-taupe-500 text-sm leading-relaxed">
+              <p className="text-black-500 text-sm leading-relaxed">
                 Don't see exactly what you're looking for in our catalog? No problem — if you have a 
                 particular design in mind, just ask. Kevin can source the pattern for you. The cost of 
                 the design will be added to your quilting bill. Contact us to discuss your idea before drop-off.
@@ -261,7 +261,7 @@ export default function ServicesPage() {
             <AlertCircle className="w-5 h-5 text-lavender-400 mt-0.5 shrink-0" />
             <div>
               <div className="font-semibold text-taupe-700 mb-1">Backing Requirement Reminder</div>
-              <p className="text-taupe-500 text-sm leading-relaxed">
+              <p className="text-black-500 text-sm leading-relaxed">
                 Please provide at least <strong className="text-taupe-700">4″ extra on all four sides</strong> beyond 
                 your quilt top's measurements. This extra backing is required for the longarm machine to 
                 properly clamp and quilt your top. Insufficient backing may delay or prevent completion.
