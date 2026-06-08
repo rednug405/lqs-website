@@ -247,7 +247,7 @@ export default function ServicesPage() {
                 <div>
                   <h3 className="font-semibold text-taupe-600 mb-1 text-sm">Binding Service</h3>
                   <p className="text-taupe-400 text-xs leading-relaxed">
-                    A binding service is available right next door by Joyce (Kevin's wife) at <a "https://www.seamscreations.com"> Seams Creations LLC</a>
+                    A binding service is available right next door by Joyce (Kevin's wife) at <a href="https://www.seamscreations.com">Seams Creations LLC</a>
                   </p>
                 </div>
               </div>
