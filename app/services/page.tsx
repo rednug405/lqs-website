@@ -245,8 +245,8 @@ export default function ServicesPage() {
               <div className="flex items-start gap-3">
                 <Sparkles className="w-5 h-5 text-taupe-300 mt-0.5 shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-taupe-600 mb-1 text-sm">Binding Service</h3>
-                  <p className="text-gray-400 text-xs leading-relaxed">
+                  <h3 className="font-semibold text-black-600 mb-1 text-sm">Binding Service</h3>
+                  <p className="text-black-400 text-xs leading-relaxed">
                     A binding service is available right next door by Joyce (Kevin's wife) at <a href="https://www.seamscreations.com">Seams Creations LLC</a>
                   </p>
                 </div>
