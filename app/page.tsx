@@ -21,7 +21,7 @@ import {
 const services = [
   {
     icon: Scissors,
-    title: "Edge-to-Edge Quilting",
+    title: "Edge-to-Edge (E2E) Quilting",
     desc: "Choose a beautiful design from our pattern catalog and we'll quilt it from edge to edge using premium #60 Glide thread. Batting included.",
     href: "/services",
     color: "bg-rose-50",
@@ -54,8 +54,8 @@ const whyUs = [
   "Premium 80/20 batting provided at no extra charge",
   "#60 Glide thread with matching color bobbin",
   "Locally based in Moore, OK — convenient drop-off",
-  "Custom designs available — we can source it for you",
-  "Moore Chamber of Commerce member",
+  "E2E designs available — we can source it for you",
+  "Moore Rotary and Chamber of Commerce member",
 ];
 
 const quiltPhotos = [
@@ -165,7 +165,7 @@ export default function HomePage() {
             {[
               ["$0.025 / sq in", "Simple flat rate"],
               ["Batting Included", "80/20 blend"],
-              ["Thread Included", "#60 Glide + matching bobbin"],
+              ["Thread Included", "#60 Glide with matching bobbin"],
               ["Custom Designs", "We can source it for you"],
             ].map(([value, label]) => (
               <div key={label} className="flex items-center gap-2 text-center sm:text-left">
@@ -249,6 +249,7 @@ export default function HomePage() {
                     ["Twin (60″×80″)", "$120.00"],
                     ["Full/Double (80″×90″)", "$180.00"],
                     ["Queen (90″×108″)", "$243.00"],
+                    ["Quitled Jackets start at", "$85"]
                   ].map(([size, price]) => (
                     <div key={size} className="flex justify-between items-center bg-white rounded-xl px-4 py-2.5 border border-rose-50 shadow-sm">
                       <span className="text-taupe-600 text-sm">{size}</span>
