@@ -138,8 +138,6 @@ const patterns: Pattern[] = [
   // Fun & Whimsical
   { name: "UE-Animal Crackers", category: "Fun & Whimsical", img: "/patterns/UE-Animal Crackers.png" },
   { name: "UE-Halloween", category: "Fun & Whimsical", img: "/patterns/UE-Holloween.png" },
-  { name: "UE-Animal Crackers", category: "Fun & Whimsical", img: "/patterns/UE-Animal Crackers.png" },
-  { name: "UE-Halloween", category: "Fun & Whimsical", img: "/patterns/UE-Holloween.png" },
   { name: "Bunny and Stars E2E", category: "Fun & Whimsical", img: "/patterns/bunny-and-stars-e2e.png" },
   { name: "Dinosaurs", category: "Fun & Whimsical", img: "/patterns/dinosaurs.png" },
 ];
