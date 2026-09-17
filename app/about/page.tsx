@@ -56,7 +56,7 @@ export default function AboutPage() {
                   </p>
                   <p>
                     LQS LLC is proud to be a member of the Moore Chamber of Commerce and the Moore Rotary Club, 
-                    and part of the rednug LLC family of veteran-owned businesses serving the Moore, Oklahoma community.
+                    and part of the rednug® LLC family of veteran-owned businesses serving the Moore, Oklahoma community.
                   </p>
                 </div>
               </CardContent>
