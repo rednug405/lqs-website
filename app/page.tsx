@@ -250,7 +250,7 @@ export default function HomePage() {
                     ["Twin (60″×80″)", "$120"],
                     ["Full/Double (80″×90″)", "$180"],
                     ["Queen (90″×108″)", "$243"],
-                    ["Quitled Jackets start at", "$85"]
+                    ["Quilted Jackets start at", "$85"]
                   ].map(([size, price]) => (
                     <div key={size} className="flex justify-between items-center bg-white rounded-xl px-4 py-2.5 border border-rose-50 shadow-sm">
                       <span className="text-taupe-600 text-base">{size}</span>

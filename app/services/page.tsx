@@ -37,8 +37,8 @@ export default function ServicesPage() {
             </div>
             <h1 className="text-4xl font-bold text-taupe-800 mb-3">What We Offer</h1>
             <p className="text-black-500 max-w-2xl text-lg">
-              Straightforward edge-to-edge (E2E) longarm quilting at a single affordable rate. 
-              Batting and thread are included — no surprises, ever.
+              Straightforward edge-to-edge (E2E) longarm quilting, priced by the square inch
+              for standard designs. Batting and thread are included — no surprises, ever.
             </p>
           </motion.div>
         </div>
