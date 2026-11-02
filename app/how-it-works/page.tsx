@@ -31,7 +31,7 @@ const steps = [
   },
   {
     step: 5, icon: Scissors, title: "We Quilt It",
-    description: "Kevin loads your quilt, sets up your chosen pattern (minimum 11" tall, with 8 stitches per inch), and quilts it edge-to-edge using premium #60 Glide thread and quality 80/20 batting. You'll be notified when it's ready.",
+    description: "Kevin loads your quilt, sets up your chosen pattern (minimum 11 inch tall design, with 8 stitches per inch), and quilts it edge-to-edge using premium #60 Glide thread and quality 80/20 batting. You'll be notified when it's ready.",
     tips: ["80/20 batting loaded by us", "#60 Glide thread + matching bobbin", "We'll call when it's done"],
   },
   {
