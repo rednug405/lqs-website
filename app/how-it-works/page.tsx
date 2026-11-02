@@ -31,7 +31,7 @@ const steps = [
   },
   {
     step: 5, icon: Scissors, title: "We Quilt It",
-    description: "Kevin loads your quilt, sets up your chosen pattern, and quilts it edge-to-edge using premium #60 Glide thread and quality 80/20 batting. You'll be notified when it's ready.",
+    description: "Kevin loads your quilt, sets up your chosen pattern (minimum 11" tall, with 8 stitches per inch), and quilts it edge-to-edge using premium #60 Glide thread and quality 80/20 batting. You'll be notified when it's ready.",
     tips: ["80/20 batting loaded by us", "#60 Glide thread + matching bobbin", "We'll call when it's done"],
   },
   {
@@ -42,7 +42,7 @@ const steps = [
 ];
 
 const faqs = [
-  { q: "How much do you charge?", a: "$0.025 per square inch for edge-to-edge quilting. Formula: Width × Length × $0.025. For example, a 60×80 quilt = $120. Batting and thread are included in that price." },
+  { q: "How much do you charge?", a: "For a standard 11" tall design, with 8 stitches per inch, $0.025 per square inch for edge-to-edge quilting. Formula: Width × Length × $0.025. For example, a 60×80 quilt = $120. Batting and thread are included in that price. Pricing could change for a smaller more dense design with more stitches per inch." },
   { q: "Do I need to provide batting?", a: "No — quality 80/20 blend batting is included. You may supply your own, but we reserve the right to decline batting we consider unsuitable to work with." },
   { q: "What do I need to bring?", a: "Your pressed quilt top and your backing material. Backing must be at least 4″ larger on all four sides than your quilt top. We provide the batting and thread." },
   { q: "Do you offer binding?", a: "Not currently. We return your quilt fully quilted and ready for you to add your binding." },
@@ -50,7 +50,7 @@ const faqs = [
   { q: "Can I request a special design?", a: "Absolutely! If you have a particular design in mind that's not in our catalog, Kevin can source it for you. The cost of the design will be added to your quilting bill." },
   { q: "Do you take mail-in orders?", a: "We primarily serve local drop-off customers. Contact Kevin to discuss your specific situation." },
   { q: "How do I pick a pattern?", a: "Browse our Pattern Catalog on this site, or contact Kevin — he loves helping quilters pick a design that complements their colors and piecing style." },
-  { q: "What sizes can you handle?", a: "Everything from table runners to king-size quilts. Contact us for extra-large or unusual dimensions to confirm before drop-off." },
+  { q: "What sizes can you handle?", a: "Everything from table runners to queen-size quilts. Contact us for extra-large or unusual dimensions to confirm before drop-off." },
   { q: "What if I have a concern about my finished quilt?", a: "Please inspect your quilt with Kevin present at pick-up so anything can be addressed right away. Communication throughout is key — Kevin will contact you if any issue arises during quilting." },
 ];
 
