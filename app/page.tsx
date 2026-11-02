@@ -50,7 +50,7 @@ const services = [
 
 const whyUs = [
   "Veteran-owned & operated — dedicated to quality",
-  "Affordable flat rate: $0.025 per square inch",
+  "Affordable pricing: $0.025 per square inch for standard designs (11″ tall or taller)",
   "Premium 80/20 batting provided at no extra charge",
   "#60 Glide thread with matching color bobbin",
   "Locally based in Moore, OK — convenient drop-off",
@@ -117,11 +117,11 @@ export default function HomePage() {
               transition={{ duration: 0.6 }}
             >
               <div className="flex flex-wrap items-center gap-2 mb-5">
-                <Badge className="bg-rose-100 text-rose-700 border-rose-200 px-3 py-1 text-xs font-medium">
+                <Badge className="bg-rose-100 text-rose-700 border-rose-200 px-3 py-1 text-sm font-medium">
                   <Shield className="w-3 h-3 mr-1.5" />
                   Veteran-Owned Small Business
                 </Badge>
-                <Badge className="bg-cream-200 text-taupe-600 border-taupe-200 px-3 py-1 text-xs font-medium">
+                <Badge className="bg-cream-200 text-taupe-600 border-taupe-200 px-3 py-1 text-sm font-medium">
                   <MapPin className="w-3 h-3 mr-1.5" />
                   Moore, OK
                 </Badge>
@@ -147,7 +147,7 @@ export default function HomePage() {
                 </Button>
                 <a
                   href="tel:4057781440"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-sm font-medium text-taupe-500 hover:text-rose-500 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-base font-medium text-taupe-500 hover:text-rose-500 transition-colors"
                 >
                   <Phone className="w-4 h-4" />
                   (405) 778-1440
@@ -161,9 +161,9 @@ export default function HomePage() {
       {/* Warm stats ribbon */}
       <section className="bg-rose-400 text-white py-4">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="flex flex-wrap justify-center md:justify-between gap-6 text-sm">
+          <div className="flex flex-wrap justify-center md:justify-between gap-6 text-base">
             {[
-              ["$0.025 / sq in", "Simple flat rate"],
+              ["$0.025 / sq in", "Standard designs, 11″ or taller"],
               ["Batting Included", "80/20 blend"],
               ["Thread Included", "#60 Glide with matching bobbin"],
               ["E2E Designs", "We can source it for you"],
@@ -171,8 +171,8 @@ export default function HomePage() {
               <div key={label} className="flex items-center gap-2 text-center sm:text-left">
                 <Sparkles className="w-4 h-4 text-rose-200 shrink-0" />
                 <div>
-                  <div className="font-semibold text-white text-sm">{value}</div>
-                  <div className="text-rose-100 text-xs">{label}</div>
+                  <div className="font-semibold text-white text-base">{value}</div>
+                  <div className="text-rose-100 text-sm">{label}</div>
                 </div>
               </div>
             ))}
@@ -185,7 +185,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-taupe-800 mb-2">What We Do</h2>
-            <p className="text-taupe-400 max-w-md mx-auto text-sm">
+            <p className="text-taupe-400 max-w-md mx-auto text-base">
               Everything you need to turn your pieced quilt top into a treasured finished quilt.
             </p>
           </div>
@@ -203,10 +203,10 @@ export default function HomePage() {
                       <svc.icon className={`w-6 h-6 ${svc.iconColor}`} />
                     </div>
                     <h3 className="font-semibold text-taupe-800 text-lg mb-2">{svc.title}</h3>
-                    <p className="text-taupe-500 text-sm leading-relaxed mb-4">{svc.desc}</p>
+                    <p className="text-taupe-500 text-base leading-relaxed mb-4">{svc.desc}</p>
                     <Link
                       href={svc.href}
-                      className="inline-flex items-center gap-1 text-sm font-medium text-rose-500 hover:text-rose-600 transition-colors"
+                      className="inline-flex items-center gap-1 text-base font-medium text-rose-500 hover:text-rose-600 transition-colors"
                     >
                       Learn more <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
@@ -226,12 +226,13 @@ export default function HomePage() {
             <div className="grid md:grid-cols-2 gap-0">
               <div className="p-8 md:p-12">
                 <h2 className="text-3xl font-bold text-taupe-800 mb-3">Simple, Honest Pricing</h2>
-                <p className="text-taupe-500 leading-relaxed mb-5 text-sm">
-                  No confusing tiers. No surprise fees. One flat rate for beautiful edge-to-edge quilting, 
-                  with batting and thread already included.
+                <p className="text-taupe-500 leading-relaxed mb-5 text-base">
+                  No surprise fees. Beautiful edge-to-edge quilting is priced by the square inch for standard
+                  designs (11 inches tall or taller), with batting and thread already included.
+                  Smaller, denser designs cost more, so just ask for a quote.
                 </p>
                 <div className="bg-white/80 rounded-2xl border border-rose-100 p-4 inline-block mb-5 shadow-sm">
-                  <div className="text-xs text-taupe-400 mb-1 uppercase tracking-wide">Your estimate</div>
+                  <div className="text-sm text-taupe-400 mb-1 uppercase tracking-wide">Your estimate</div>
                   <div className="font-mono text-rose-500 font-bold text-xl">
                     Width × Length × $0.025
                   </div>
@@ -252,11 +253,11 @@ export default function HomePage() {
                     ["Quitled Jackets start at", "$85"]
                   ].map(([size, price]) => (
                     <div key={size} className="flex justify-between items-center bg-white rounded-xl px-4 py-2.5 border border-rose-50 shadow-sm">
-                      <span className="text-taupe-600 text-sm">{size}</span>
+                      <span className="text-taupe-600 text-base">{size}</span>
                       <span className="font-bold text-rose-500">{price}</span>
                     </div>
                   ))}
-                  <p className="text-xs text-taupe-400 text-right pt-1">✓ Batting & thread included</p>
+                  <p className="text-sm text-taupe-400 text-right pt-1">✓ Batting & thread included</p>
                 </div>
               </div>
             </div>
@@ -269,7 +270,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-taupe-800 mb-2">Our Work</h2>
-            <p className="text-taupe-400 max-w-md mx-auto text-sm">
+            <p className="text-taupe-400 max-w-md mx-auto text-base">
               Real quilts finished right here in Moore, OK. Every stitch made with care.
             </p>
           </div>
@@ -307,13 +308,13 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>
               <h2 className="text-3xl font-bold text-taupe-800 mb-3">Why Quilters Choose LQS</h2>
-              <p className="text-taupe-500 leading-relaxed mb-6 text-sm">
+              <p className="text-taupe-500 leading-relaxed mb-6 text-base">
                 We're a local, veteran-owned business in Moore, OK. Kevin brings the same care and 
                 precision to every single quilt that he gave to his service career.
               </p>
               <ul className="space-y-3">
                 {whyUs.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-taupe-600 text-sm">
+                  <li key={i} className="flex items-start gap-2.5 text-taupe-600 text-base">
                     <CheckCircle className="w-4 h-4 text-rose-400 mt-0.5 shrink-0" />
                     {item}
                   </li>
@@ -333,7 +334,7 @@ export default function HomePage() {
                   <Star key={i} className="w-4 h-4 text-rose-400 fill-rose-400" />
                 ))}
               </div>
-              <p className="text-taupe-600 text-sm leading-relaxed italic mb-5">
+              <p className="text-taupe-600 text-base leading-relaxed italic mb-5">
                 "I started LQS LLC because I know how much love goes into a quilt top. 
                 Every quilt that comes through the door gets my full attention — I treat it 
                 like it's my own. Affordable prices, quality work, and a quick turnaround 
@@ -344,8 +345,8 @@ export default function HomePage() {
                   <Shield className="w-5 h-5 text-rose-400" />
                 </div>
                 <div>
-                  <div className="font-semibold text-taupe-800 text-sm">Kevin Gunder</div>
-                  <div className="text-xs text-taupe-400">Owner, LQS LLC · Moore, OK</div>
+                  <div className="font-semibold text-taupe-800 text-base">Kevin Gunder</div>
+                  <div className="text-sm text-taupe-400">Owner, LQS LLC · Moore, OK</div>
                 </div>
               </div>
             </div>
@@ -360,7 +361,7 @@ export default function HomePage() {
           <h2 className="text-2xl md:text-3xl font-bold text-taupe-800 mb-3">
             Ready to finish your quilt?
           </h2>
-          <p className="text-taupe-500 mb-6 text-sm max-w-md mx-auto">
+          <p className="text-taupe-500 mb-6 text-base max-w-md mx-auto">
             Call, text, or email Kevin — he responds quickly and is happy to answer any questions before you bring your quilt in.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">

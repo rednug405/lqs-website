@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | LQS LLC Longarm Quilting",
   },
   description:
-    "Veteran-owned longarm quilting service in Moore, OK. Affordable edge-to-edge quilting at $0.025/sq in. Batting & thread included. Serving Moore, Norman, Midwest City, and OKC. Call (405) 778-1440.",
+    "Veteran-owned longarm quilting service in Moore, OK. Affordable edge-to-edge quilting from $0.025/sq in for standard designs (11 inches or taller). Batting & thread included. Serving Moore, Norman, Midwest City, and OKC. Call (405) 778-1440.",
   keywords: [
     "longarm quilting Moore OK",
     "longarm quilting service Oklahoma",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "LQS LLC Longarm Quilting Service",
     title: "LQS LLC | Longarm Quilting Service — Moore, OK",
     description:
-      "Veteran-owned longarm quilting service in Moore, OK. Edge-to-edge quilting at $0.025/sq in. Batting & thread included. Call (405) 778-1440.",
+      "Veteran-owned longarm quilting service in Moore, OK. Edge-to-edge quilting from $0.025/sq in for standard designs (11 inches or taller). Batting & thread included. Call (405) 778-1440.",
   },
   robots: {
     index: true,
@@ -102,7 +102,7 @@ const localBusinessSchema = {
         itemOffered: {
           "@type": "Service",
           name: "Edge-to-Edge Longarm Quilting",
-          description: "Professional longarm quilting at $0.025 per square inch. Batting and thread included.",
+          description: "Professional longarm quilting from $0.025 per square inch for standard designs 11 inches tall or taller. Batting and thread included.",
         },
         price: "0.025",
         priceCurrency: "USD",

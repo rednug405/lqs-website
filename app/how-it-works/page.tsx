@@ -21,8 +21,8 @@ const steps = [
   },
   {
     step: 3, icon: Phone, title: "Contact Kevin",
-    description: "Call, text, or email to confirm availability and discuss your quilt. This is also when you'll choose your e2e pattern and get your price estimate.",
-    tips: ["Call/text: (405) 778-1440", "Email: Kevin@LQS.LLC", "Have your dimensions ready"],
+    description: "Call, text, or email to confirm availability and discuss your quilt. This is also when you'll choose your e2e pattern and get your price estimate. Our standard price covers designs 11 inches tall or taller. Smaller designs take more time and cost more, so ask about a design's height when you choose.",
+    tips: ["Call/text: (405) 778-1440", "Email: Kevin@LQS.LLC", "Have your dimensions ready", "Standard price: designs 11″ or taller"],
   },
   {
     step: 4, icon: Truck, title: "Drop Off Your Quilt",
@@ -31,7 +31,7 @@ const steps = [
   },
   {
     step: 5, icon: Scissors, title: "We Quilt It",
-    description: "Kevin loads your quilt, sets up your chosen pattern (minimum 11 inch tall design, with 8 stitches per inch), and quilts it edge-to-edge using premium #60 Glide thread and quality 80/20 batting. You'll be notified when it's ready.",
+    description: "Kevin loads your quilt, sets up your chosen pattern, and quilts it edge-to-edge using premium #60 Glide thread and quality 80/20 batting. You'll be notified when it's ready.",
     tips: ["80/20 batting loaded by us", "#60 Glide thread + matching bobbin", "We'll call when it's done"],
   },
   {
@@ -42,7 +42,7 @@ const steps = [
 ];
 
 const faqs = [
-  { q: "How much do you charge?", a: "For a standard 11 inch tall design, with 8 stitches per inch, $0.025 per square inch for edge-to-edge quilting. Formula: Width × Length × $0.025. For example, a 60×80 quilt = $120. Batting and thread are included in that price. Pricing could change for a smaller more dense design with more stitches per inch." },
+  { q: "How much do you charge?", a: "For standard edge-to-edge designs that are 11 inches tall or taller (about 8 stitches per inch), the price is $0.025 per square inch. Formula: Width × Length × $0.025. For example, a 60×80 quilt = $120. Batting and thread are included. Smaller, denser designs under 11 inches tall take much more time to stitch, so they cost more. Kevin will quote you before he starts." },
   { q: "Do I need to provide batting?", a: "No — quality 80/20 blend batting is included. You may supply your own, but we reserve the right to decline batting we consider unsuitable to work with." },
   { q: "What do I need to bring?", a: "Your pressed quilt top and your backing material. Backing must be at least 4″ larger on all four sides than your quilt top. We provide the batting and thread." },
   { q: "Do you offer binding?", a: "Not currently. We return your quilt fully quilted and ready for you to add your binding." },
@@ -62,7 +62,7 @@ export default function HowItWorksPage() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <div className="flex items-center gap-2 mb-3">
               <CheckCircle className="w-5 h-5 text-rose-400" />
-              <span className="text-rose-400 font-medium text-sm">How It Works</span>
+              <span className="text-rose-400 font-medium text-base">How It Works</span>
             </div>
             <h1 className="text-4xl font-bold text-taupe-800 mb-3">The Process, Step by Step</h1>
             <p className="text-taupe-500 max-w-2xl text-lg">
@@ -82,18 +82,18 @@ export default function HowItWorksPage() {
                 <Card className="h-full border-rose-50 bg-white hover:shadow-sm transition-shadow">
                   <CardContent className="p-5">
                     <div className="flex items-start gap-4">
-                      <div className="w-9 h-9 bg-rose-100 text-rose-500 rounded-full flex items-center justify-center font-bold text-sm shrink-0 border border-rose-200">
+                      <div className="w-9 h-9 bg-rose-100 text-rose-500 rounded-full flex items-center justify-center font-bold text-base shrink-0 border border-rose-200">
                         {step.step}
                       </div>
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-1.5">
                           <step.icon className="w-4 h-4 text-rose-300" />
-                          <h3 className="font-semibold text-taupe-700 text-sm">{step.title}</h3>
+                          <h3 className="font-semibold text-taupe-700 text-base">{step.title}</h3>
                         </div>
-                        <p className="text-taupe-400 text-xs mb-2.5 leading-relaxed">{step.description}</p>
+                        <p className="text-taupe-400 text-sm mb-2.5 leading-relaxed">{step.description}</p>
                         <ul className="space-y-1">
                           {step.tips.map((tip, j) => (
-                            <li key={j} className="flex items-start gap-1.5 text-xs text-taupe-400">
+                            <li key={j} className="flex items-start gap-1.5 text-sm text-taupe-400">
                               <ArrowRight className="w-3 h-3 text-rose-300 mt-0.5 shrink-0" />
                               {tip}
                             </li>
@@ -116,7 +116,7 @@ export default function HowItWorksPage() {
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
             {[
-              ["Price", "$0.025/sq in · batting & thread included"],
+              ["Price", "$0.025/sq in for designs 11″ or taller · batting & thread included"],
               ["You Bring", "Quilt top + backing (4″ extra all sides)"],
               ["We Provide", "80/20 batting + #60 Glide thread"],
               ["Custom Designs", "Available — design cost added to bill"],
@@ -124,8 +124,8 @@ export default function HowItWorksPage() {
               ["Contact", "(405) 778-1440 · Kevin@LQS.LLC"],
             ].map(([label, value]) => (
               <div key={label} className="bg-white rounded-2xl p-4 border border-rose-50 shadow-sm">
-                <div className="text-xs font-semibold text-rose-400 uppercase tracking-wide mb-1">{label}</div>
-                <div className="text-sm text-taupe-600">{value}</div>
+                <div className="text-sm font-semibold text-rose-400 uppercase tracking-wide mb-1">{label}</div>
+                <div className="text-base text-taupe-600">{value}</div>
               </div>
             ))}
           </div>
@@ -145,8 +145,8 @@ export default function HowItWorksPage() {
                 <div className="flex items-start gap-3">
                   <AlertCircle className="w-4 h-4 text-rose-300 mt-0.5 shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-taupe-700 text-sm mb-1.5">{faq.q}</h3>
-                    <p className="text-taupe-400 text-xs leading-relaxed">{faq.a}</p>
+                    <h3 className="font-semibold text-taupe-700 text-base mb-1.5">{faq.q}</h3>
+                    <p className="text-taupe-400 text-sm leading-relaxed">{faq.a}</p>
                   </div>
                 </div>
               </motion.div>
@@ -157,7 +157,7 @@ export default function HowItWorksPage() {
         {/* CTA */}
         <div className="rounded-3xl p-8 text-center" style={{ background: "linear-gradient(135deg, #f2c4d2 0%, #e4d9cc 100%)" }}>
           <h2 className="text-2xl font-bold text-taupe-800 mb-2">Still have questions?</h2>
-          <p className="text-taupe-500 mb-5 text-sm">Kevin is happy to answer anything before you drop off your quilt.</p>
+          <p className="text-taupe-500 mb-5 text-base">Kevin is happy to answer anything before you drop off your quilt.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
             <a href="tel:4057781440" className="inline-flex items-center justify-center gap-2 px-7 py-3 bg-rose-400 hover:bg-rose-500 text-white font-medium rounded-full transition-colors shadow-sm">
               <Phone className="w-4 h-4" /> Call / Text (405) 778-1440

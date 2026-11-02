@@ -170,7 +170,7 @@ export default function PatternsPage() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <div className="flex items-center gap-2 mb-3">
               <Scissors className="w-5 h-5 text-rose-400" />
-              <span className="text-rose-400 font-medium text-sm">Pattern Catalog</span>
+              <span className="text-rose-400 font-medium text-base">Pattern Catalog</span>
             </div>
             <h1 className="text-4xl font-bold text-taupe-800 mb-3">Choose Your Design</h1>
             <p className="text-taupe-500 max-w-2xl text-lg">
@@ -191,7 +191,7 @@ export default function PatternsPage() {
               placeholder="Search designs…"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full pl-9 pr-4 py-2.5 border border-rose-100 rounded-xl text-sm bg-white focus:outline-none focus:ring-2 focus:ring-rose-300"
+              className="w-full pl-9 pr-4 py-2.5 border border-rose-100 rounded-xl text-base bg-white focus:outline-none focus:ring-2 focus:ring-rose-300"
             />
           </div>
           <div className="flex flex-wrap gap-2">
@@ -199,7 +199,7 @@ export default function PatternsPage() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
+                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
                   activeCategory === cat
                     ? "bg-rose-400 text-white shadow-sm"
                     : "bg-white border border-rose-100 text-taupe-500 hover:border-rose-300"
@@ -212,7 +212,7 @@ export default function PatternsPage() {
         </div>
 
         {/* Count */}
-        <p className="text-xs text-taupe-400 mb-5">
+        <p className="text-sm text-taupe-400 mb-5">
           Showing {filtered.length} of {patterns.length} designs
         </p>
 
@@ -236,8 +236,8 @@ export default function PatternsPage() {
                 />
               </div>
               <div className="px-2 pb-2.5 pt-1.5">
-                <p className="text-taupe-700 text-xs font-medium leading-tight text-center">{pattern.name}</p>
-                <p className="text-taupe-300 text-[10px] text-center mt-0.5">{categoryEmoji[pattern.category]}</p>
+                <p className="text-taupe-700 text-sm font-medium leading-tight text-center">{pattern.name}</p>
+                <p className="text-taupe-400 text-sm text-center mt-0.5">{categoryEmoji[pattern.category]}</p>
               </div>
             </motion.div>
           ))}
@@ -246,7 +246,7 @@ export default function PatternsPage() {
         {filtered.length === 0 && (
           <div className="text-center py-16 text-taupe-400">
             <p className="text-lg mb-1">No designs match your search.</p>
-            <p className="text-sm">Try a different keyword or browse all categories.</p>
+            <p className="text-base">Try a different keyword or browse all categories.</p>
           </div>
         )}
 
@@ -255,7 +255,7 @@ export default function PatternsPage() {
           <Sparkles className="w-6 h-6 text-rose-400 mt-0.5 shrink-0" />
           <div>
             <h3 className="font-semibold text-taupe-700 mb-1">Don&apos;t see the perfect design?</h3>
-            <p className="text-taupe-500 text-sm leading-relaxed">
+            <p className="text-taupe-500 text-base leading-relaxed">
               If you have a particular design in mind that isn&apos;t in our catalog, Kevin can source it for you. 
               The cost of the design will be added to your quilting bill.{" "}
               <a href="/about" className="text-rose-500 hover:text-rose-600 font-medium underline underline-offset-2">

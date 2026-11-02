@@ -13,7 +13,7 @@ export default function AboutPage() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <div className="flex items-center gap-2 mb-3">
               <Heart className="w-5 h-5 text-rose-400" />
-              <span className="text-rose-400 font-medium text-sm">About & Contact</span>
+              <span className="text-rose-400 font-medium text-base">About & Contact</span>
             </div>
             <h1 className="text-4xl font-bold text-taupe-800 mb-3">About LQS LLC</h1>
             <p className="text-taupe-500 max-w-2xl text-lg">
@@ -36,13 +36,13 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <h2 className="text-xl font-bold text-taupe-800">Kevin Gunder</h2>
-                    <p className="text-taupe-400 text-sm">Owner & Operator, LQS LLC</p>
-                    <Badge className="mt-1 bg-rose-50 text-rose-600 border-rose-100 text-xs font-medium">
+                    <p className="text-taupe-400 text-base">Owner & Operator, LQS LLC</p>
+                    <Badge className="mt-1 bg-rose-50 text-rose-600 border-rose-100 text-sm font-medium">
                       <Shield className="w-3 h-3 mr-1" /> Veteran-Owned
                     </Badge>
                   </div>
                 </div>
-                <div className="space-y-3 text-sm text-taupe-500 leading-relaxed">
+                <div className="space-y-3 text-base text-taupe-500 leading-relaxed">
                   <p>
                     LQS LLC was founded with a simple mission: provide Moore-area quilters with an 
                     affordable, reliable longarm quilting service they can truly trust. As a veteran, 
@@ -74,8 +74,8 @@ export default function AboutPage() {
                 <Card key={i} className={`border-0 ${item.bg}`}>
                   <CardContent className="p-4">
                     <item.icon className={`w-5 h-5 ${item.iconColor} mb-2`} />
-                    <div className="font-semibold text-taupe-700 text-sm">{item.title}</div>
-                    <div className="text-xs text-taupe-400 mt-0.5">{item.desc}</div>
+                    <div className="font-semibold text-taupe-700 text-base">{item.title}</div>
+                    <div className="text-sm text-taupe-400 mt-0.5">{item.desc}</div>
                   </CardContent>
                 </Card>
               ))}
@@ -89,22 +89,22 @@ export default function AboutPage() {
                 <div className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-rose-400 mt-0.5 shrink-0" />
                   <div>
-                    <div className="font-medium text-taupe-700 text-sm">Studio Address</div>
-                    <div className="text-taupe-400 text-sm">121 W. Main St, Suite 104<br />Moore, OK 73150</div>
+                    <div className="font-medium text-taupe-700 text-base">Studio Address</div>
+                    <div className="text-taupe-400 text-base">121 W. Main St, Suite 104<br />Moore, OK 73150</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-rose-400 shrink-0" />
                   <div>
-                    <div className="font-medium text-taupe-700 text-sm">Call or Text</div>
-                    <a href="tel:4057781440" className="text-rose-500 hover:underline text-sm">(405) 778-1440</a>
+                    <div className="font-medium text-taupe-700 text-base">Call or Text</div>
+                    <a href="tel:4057781440" className="text-rose-500 hover:underline text-base">(405) 778-1440</a>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-rose-400 shrink-0" />
                   <div>
-                    <div className="font-medium text-taupe-700 text-sm">Email</div>
-                    <a href="mailto:kevin@lqs.llc" className="text-rose-500 hover:underline text-sm">Kevin@LQS.LLC</a>
+                    <div className="font-medium text-taupe-700 text-base">Email</div>
+                    <a href="mailto:kevin@lqs.llc" className="text-rose-500 hover:underline text-base">Kevin@LQS.LLC</a>
                   </div>
                 </div>
               </div>
@@ -115,10 +115,10 @@ export default function AboutPage() {
             <div className="bg-cream-200 rounded-2xl h-44 flex items-center justify-center">
               <div className="text-center text-taupe-500">
                 <MapPin className="w-8 h-8 mx-auto mb-2 text-rose-300" />
-                <p className="font-medium text-taupe-600 text-sm">121 W. Main St, Suite 104</p>
-                <p className="text-xs text-taupe-400">Moore, OK 73150</p>
+                <p className="font-medium text-taupe-600 text-base">121 W. Main St, Suite 104</p>
+                <p className="text-sm text-taupe-400">Moore, OK 73150</p>
                 <a href="https://maps.google.com/?q=121+W+Main+St+Moore+OK+73150" target="_blank" rel="noopener noreferrer"
-                  className="mt-2 inline-block text-xs text-rose-400 hover:underline">
+                  className="mt-2 inline-block text-sm text-rose-400 hover:underline">
                   Open in Google Maps →
                 </a>
               </div>
