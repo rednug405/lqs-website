@@ -14,10 +14,10 @@ export function Footer() {
               </div>
               <span className="font-bold text-cream-100">LQS LLC</span>
             </div>
-            <p className="text-sm text-taupe-400 leading-relaxed mb-3">
+            <p className="text-base text-taupe-400 leading-relaxed mb-3">
               Affordable, quality longarm quilting — finished with care, every single time.
             </p>
-            <div className="flex items-center gap-1.5 text-xs text-rose-300">
+            <div className="flex items-center gap-1.5 text-sm text-rose-300">
               <Shield className="w-3.5 h-3.5" />
               Veteran-Owned Small Business · Moore, OK
             </div>
@@ -25,8 +25,8 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-cream-200 mb-3 text-sm uppercase tracking-wider">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="font-semibold text-cream-200 mb-3 text-base uppercase tracking-wider">Quick Links</h3>
+            <ul className="space-y-2 text-base">
               {[
                 ["Home", "/"],
                 ["Services & Pricing", "/services"],
@@ -45,8 +45,8 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold text-cream-200 mb-3 text-sm uppercase tracking-wider">Reach Us</h3>
-            <ul className="space-y-3 text-sm">
+            <h3 className="font-semibold text-cream-200 mb-3 text-base uppercase tracking-wider">Reach Us</h3>
+            <ul className="space-y-3 text-base">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-rose-300 mt-0.5 shrink-0" />
                 <span className="text-taupe-400">121 W. Main St, Suite 104<br />Moore, OK 73150</span>
@@ -63,7 +63,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-taupe-700 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-taupe-500">
+        <div className="border-t border-taupe-700 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-sm text-taupe-500">
           <span>© {new Date().getFullYear()} LQS LLC. All rights reserved. Moore, OK 73150.</span>
           <span className="flex items-center gap-1">Made with <Heart className="w-3 h-3 text-rose-400 fill-rose-400" /> · Moore Chamber of Commerce Member</span>
         </div>

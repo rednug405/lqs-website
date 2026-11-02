@@ -29,8 +29,8 @@ export function Navigation() {
               <Scissors className="w-4 h-4 text-white" />
             </div>
             <div className="leading-tight">
-              <div className="font-bold text-taupe-800 text-sm tracking-wide">LQS LLC</div>
-              <div className="text-xs text-taupe-500">Longarm Quilting Service</div>
+              <div className="font-bold text-taupe-800 text-base tracking-wide">LQS LLC</div>
+              <div className="text-sm text-taupe-500">Longarm Quilting Service</div>
             </div>
           </Link>
 
@@ -41,7 +41,7 @@ export function Navigation() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "px-3 py-2 rounded-lg text-sm font-medium transition-colors",
+                  "px-3 py-2 rounded-lg text-base font-medium transition-colors",
                   pathname === link.href
                     ? "bg-rose-100 text-rose-700"
                     : "text-taupe-600 hover:text-taupe-900 hover:bg-cream-200"
@@ -56,7 +56,7 @@ export function Navigation() {
           <div className="hidden md:flex items-center gap-3">
             <a
               href="tel:4057781440"
-              className="flex items-center gap-1.5 text-sm text-taupe-500 hover:text-rose-600 transition-colors"
+              className="flex items-center gap-1.5 text-base text-taupe-500 hover:text-rose-600 transition-colors"
             >
               <Phone className="w-4 h-4" />
               (405) 778-1440
@@ -84,7 +84,7 @@ export function Navigation() {
               href={link.href}
               onClick={() => setOpen(false)}
               className={cn(
-                "block px-3 py-2.5 rounded-lg text-sm font-medium transition-colors",
+                "block px-3 py-2.5 rounded-lg text-base font-medium transition-colors",
                 pathname === link.href
                   ? "bg-rose-100 text-rose-700"
                   : "text-taupe-600 hover:bg-cream-200"
@@ -94,7 +94,7 @@ export function Navigation() {
             </Link>
           ))}
           <div className="pt-2 border-t border-rose-100 mt-2">
-            <a href="tel:4057781440" className="flex items-center gap-2 px-3 py-2 text-sm text-taupe-600">
+            <a href="tel:4057781440" className="flex items-center gap-2 px-3 py-2 text-base text-taupe-600">
               <Phone className="w-4 h-4 text-rose-400" /> (405) 778-1440
             </a>
           </div>
