@@ -42,7 +42,7 @@ const steps = [
 ];
 
 const faqs = [
-  { q: "How much do you charge?", a: "For a standard 11" tall design, with 8 stitches per inch, $0.025 per square inch for edge-to-edge quilting. Formula: Width × Length × $0.025. For example, a 60×80 quilt = $120. Batting and thread are included in that price. Pricing could change for a smaller more dense design with more stitches per inch." },
+  { q: "How much do you charge?", a: "For a standard 11 inch tall design, with 8 stitches per inch, $0.025 per square inch for edge-to-edge quilting. Formula: Width × Length × $0.025. For example, a 60×80 quilt = $120. Batting and thread are included in that price. Pricing could change for a smaller more dense design with more stitches per inch." },
   { q: "Do I need to provide batting?", a: "No — quality 80/20 blend batting is included. You may supply your own, but we reserve the right to decline batting we consider unsuitable to work with." },
   { q: "What do I need to bring?", a: "Your pressed quilt top and your backing material. Backing must be at least 4″ larger on all four sides than your quilt top. We provide the batting and thread." },
   { q: "Do you offer binding?", a: "Not currently. We return your quilt fully quilted and ready for you to add your binding." },
